@@ -1,0 +1,1686 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml">
+<!-- START THOMSON WEEKLY AD-HOC HEADER BLOCK -->
+%%! 
+init; 
+errormode notify TUI_Weekly_Failures_Alerts@creator.co.uk ;
+set subsets_sourcetable [merge subsets_.clausefrom_] ;
+set outmailid [merge outmail.messageid] ;
+source scripts_marketing/weekly/thomson/AdHoc/initCache_Thomson_AdHoc.tcl;
+set ecamp "w" ;
+return; 
+%%
+
+%%
+set cmid [merge memberid];
+LoadUserFromCache $cmid;
+set tracking "cmid=$cmid&ecamp=$ecamp&ito=ecrm$ecrmCode$outmailid";
+return ;
+%%
+
+
+
+<!-- END THOMSON WEEKLY AD-HOC HEADER BLOCK -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TUI - Discover your smile.</title>
+<style type="text/css">
+/* General styles and reset */
+body {
+	width: 100% !important;
+	cursor: pointer;
+}
+.ReadMsgBody {
+	width: 100%;
+}
+body {
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+}
+/* Prevent Webkit and Windows Mobile platforms changing default font sizes + webkit font weight correction. */
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 1000px;
+}
+img {
+	line-height: 100%;
+	outline: none;
+	text-decoration: none;
+	display: block;
+}
+/* Prevent spacing issues in outlook */
+table, table td {
+	border-collapse: collapse !important;
+}
+.float-right {
+	float: right;
+	display: inline-block;
+}
+.float-left {
+	float: left;
+	display: inline-block;
+}
+#yahoo-resize[yahoofix] {
+	width: 620px;
+}
+
+/*** Media queries begin here ***/
+
+@media screen {
+.invisible {
+	max-height: 0px !important;
+	font-size: 0 !important;
+	display: none !important;
+	line-height: 0px;
+!important;
+	padding: 0 !important;
+	mso-hide: all !important;
+}
+/** FONT BEGIN **/
+/* TUI type */
+@font-face {
+	font-family: 'tui';
+	src: url('http://cslb.creatormail.co.uk/sites/tui/hermes/fonts/tuitype/tuitype-rg.eot');
+	src: url('http://cslb.creatormail.co.uk/sites/tui/hermes/fonts/tuitype/tuitype-rg.eot?#iefix') format('embedded-opentype'), url('http://cslb.creatormail.co.uk/sites/tui/hermes/fonts/tuitype/tuitype-rg.woff') format('woff'), url('http://cslb.creatormail.co.uk/sites/tui/hermes/fonts/tuitype/tuitype-rg.svg#webfont') format('svg'), url('http://cslb.creatormail.co.uk/sites/tui/hermes/fonts/tuitype/tuitype-rg.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+}
+/* FONT END */
+
+/*** Opacity Desktop ***/
+.OpacityBlockWhite {
+	background: rgb(255, 255, 255); /* Fallback */
+	background: rgba(255, 255, 255, 0.9); /*Edit last digit only */
+}
+.OpacityBlockBlue {
+	background: rgb(112, 203, 244); /* Fallback */
+	background: rgba(112, 203, 244, 0.9); /*Edit last digit only */
+}
+.OpacityBlockDark {
+	background: rgb(9, 42, 94); /* Fallback */
+	background: rgba(9, 42, 94, 0.7); /*Edit last digit only */
+}
+
+/***-MOBILE VIEW-***/
+@media only screen and (max-width: 480px) {
+/**/ .invisible {
+	max-height: none !important;
+	font-size: 12px !important;
+	display: block !important;
+	height: 17px !important;
+	width: 115px !important;
+	overflow : visible !important;
+}
+body {
+	background-color: #f0f0f0 !important;
+}
+/* Header & Navigation */
+*[class*="header-cell"] {
+	background: url(http://cslb.creatormail.co.uk/sites/tui/thomson/TH150713/header-mob.gif) no-repeat top left !important;
+}
+*[class*="header-spacer"] {
+	height: 68px !important;
+}
+/***Resizing - Do not edit***/
+
+/*Pixels*/
+*[class*="device-width"] {
+	width: 320px !important;
+}
+/*Percentages*/
+
+.fluidimage {
+	width: 100% !important;
+	height: auto !important;
+}
+.fluid100 {
+	width: 100% !important;
+}
+*[class*="fluid95"] {
+	height: auto !important;
+	width: 95% !important;
+}
+*[class*="fluid90"] {
+	height: auto !important;
+	width: 90% !important;
+}
+*[class*="fluid80"] {
+	height: auto !important;
+	width: 80% !important;
+}
+*[class*="fluid70"] {
+	height: auto !important;
+	width: 70% !important;
+}
+*[class*="fluid60"] {
+	height: auto !important;
+	width: 60% !important;
+}
+*[class*="fluid50"] {
+	height: auto !important;
+	width: 50% !important;
+}
+/*** Text Adjustments ***/
+.fontsizeH1[class="fontsizeH1"] {
+	font-size: 32px !important;
+	line-height: 130% !important;
+}
+.fontsizeH2[class="fontsizeH2"] {
+	font-size: 28px !important;
+	line-height: 130% !important;
+}
+.fontsizeH3[class="fontsizeH3"] {
+	font-size: 24px !important;
+	line-height: 130% !important;
+}
+.fontsizeH4[class="fontsizeH4"] {
+	font-size: 20px !important;
+	line-height: 130% !important;
+}
+.fontsize18[class="fontsize18"] {
+	font-size: 18px !important;
+	line-height: 130% !important;
+}
+.fontsize16[class="fontsize16"] {
+	font-size: 16px !important;
+	line-height: 130% !important;
+}
+.fontsize14[class="fontsize14"] {
+	font-size: 14px !important;
+	line-height: 130% !important;
+}
+.fontsize12[class="fontsize12"] {
+	font-size: 12px !important;
+	line-height: 130% !important;
+}
+.fontsize10[class="fontsize10"] {
+	font-size: 10px !important;
+	line-height: 130% !important;
+}
+/*** Opacity Mobile ***/
+[class=OpacityBlockWhite] {
+	background: rgb(255, 255, 255); /* Fallback */
+	background: rgba(255, 255, 255, 0.9); /*Edit last digit only */
+}
+[class=OpacityBlockBlue] {
+	background: rgb(148, 216, 247); /* Fallback */
+	background: rgba(112, 203, 244, 0.9); /*Edit last digit only */
+}
+[class=OpacityBlockDark] {
+	background: rgb(9, 42, 94); /* Fallback */
+	background: rgba(9, 42, 94, 0.7); /*Edit last digit only */
+}
+/*** Stacking ***/
+*[class].puttop {
+	display: table-header-group!important;
+}
+*[class].putbottom {
+	display: table-footer-group!important;
+}
+[class~="mobile-float"] {
+	display: block !important;
+	width: 100% !important;
+}
+.height-auto {
+	height: auto !important;
+}
+*[class*="mobile-hide"], *[class*="mobile-hide"] * {
+	display: none!important;
+	max-height: 0!important;
+	max-width: 0!important;
+	height: 0!important;
+	width: 0px !important;
+	padding: 0!important;
+	margin: 0!important;
+	visibility: hidden!important;
+	line-height: 0px !important;
+	font-size: 0px !important;
+	background: none!important;
+}
+/* intro section */
+
+.border-2px-blue {
+	border: 2px solid #092a5e !important;
+}
+.border-1px-blue {
+	border: 1px solid #092a5e !important;
+}
+.blue {
+	color: #092a5e !important;
+}
+.blueBlock {
+	background-color: #70CBF4 !important;
+}
+[class~="margin-bottom-10"] {
+	margin-bottom: 10px !important;
+}
+/*** Backgrounds - Editable Content***/
+
+[class~="sb-bg-swap"] {
+	background: url(http://cslb.creatormail.co.uk/sites/tui/thomson/TH160419/sb-mob.jpg) !important;
+	background-repeat: no-repeat !important;
+	background-position: 0px 108px !important;
+}
+/*****START TEMPLATE SPECIFIC*****/
+.hero-padding {
+	width: 280px !important;
+	height: auto !important;
+	padding-top: 50px !important;
+	padding-bottom: 20px !important;
+	padding-left: 20px !important;
+}
+.hero-copy {
+	width: 300px !important;
+	margin-left: 20px !important;
+	margin-right: 20px !important;
+	margin-bottom: 20px !important;
+	margin-top: 0px !important;
+}
+.hero-grow {
+	height: 110px !important;
+}
+.hero-shift {
+	background-position: center 80px !important;
+	background-size: 200% !important;
+}
+.white-bg {
+	background-color: #ffffff !important;
+}
+.not-caps {
+	text-transform: none !important;
+}
+.icon-cell {
+	width: 60px !important;
+}
+.mobile-hero-alt-text {
+	font-size: 20px !important;
+	line-height: 30px !important;
+}
+.tb-copy {
+	margin-top:65px !important;
+	margin-left:15px !important;
+	margin-right:20px !important;
+	margin-bottom:120px !important;
+	width:210px !important;
+}
+.tb-bg {
+	background-size: 100% !important;
+	background-position: 0px 0px !important;
+	background-image:url(http://cslb.creatormail.co.uk/sites/tui/2018/SB/TB/June/tui-tb-algarve-mob.jpg) !important;
+}
+/* Tourist Board */
+}
+</style>
+</head>
+
+<body bgcolor="#f0f0f0" style="background: #f0f0f0; min-height: 1000px; color: #000000; -webkit-font-smoothing: antialiased;" text="#000000">
+
+<!--Wrapper//-->
+<table width="100%" cellspacing="0" border="0" cellpadding="0">
+  
+  <!-- Preheader// -->
+  <tr>
+    <td valign="top" style="font-family:Arial, Helvetica, sans-serif; color:#ffffff; font-size:1px;">Time for a holiday?</td>
+  </tr>
+  <!-- //Preheader -->
+
+  <tr>
+    <td style="padding:5px 0;" align="center" valign="top"><!--Container//-->
+      
+      <table bgcolor="#ffffff" class="device-width" id="yahoo-resize" width="750" height="508" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+        <tr>
+          <td align="center" valign="top"><!--Pretext//-->
+            
+            <table bgcolor="#f0f0f0" class="fluid100" align="center" width="750" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td style="font-family: Helvetica, A
+rial, sans-serif; font-size:10px; line-height:12px; color:#6c6c6c; padding-bottom:10px" align="center"> Email not looking right?&nbsp; <a style="color:#6c6c6c; text-decoration:underline;" href="%%track {[return http://email.thomson.co.uk/preview/rss.tml?$tracking]} -group {Pre}%%">Click here</a> to view it in your browser </td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <!--//Pretext-->
+            
+            <table class="fluid100" width="750" border="0" cellspacing="0" cellpadding="0" bgcolor="#f0f0f0">
+              <tr>
+                <td align="center" valign="top"><table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td style="padding:8px; font-family:'Tui', Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height:16px; mso-line-height-rule: exactly;text-transform:uppercase; background-color:#dcdcdc;" align="center"><a href="%%track {[return http://www.tui.co.uk/destinations/info/travel-aware?$tracking]} -group {FCO}%%" style="text-decoration:none; color:#092a5e">TRAVEL AWARE - STAYING SAFE AND HEALTHY ABROAD</a></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+              </tr>
+            </table>
+            
+            <!--Intro//-->
+            
+                        <table class="fluid100" align="center" width="750" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td  align="center" valign="top" background="http://cslb.creatormail.co.uk/sites/tui/2018/SB/TUI/180622/hero4.gif" style="background-image: url(http://cslb.creatormail.co.uk/sites/tui/2018/SB/TUI/180622/hero4.gif); background-repeat:no-repeat; background-position:center top;" class="hero-shift"><!--[if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:750px;height:550px;">
+
+<v:fill type="frame" src="http://cslb.creatormail.co.uk/sites/tui/2018/SB/TUI/180622/hero4.gif" color="#cfb296" />
+<v:textbox inset="0,0,0,0">
+<![endif]-->
+                  
+                  <table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td bgcolor="#70cbf4"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td style="font-size:0px; line-height:0px;" width="15"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="15" border="0" /></td>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="15" border="0" /></td>
+                                </tr>
+                                <tr>
+                                  <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td align="left" valign="middle"><a href="%%track {[return https://www.tui.co.uk?$tracking]} -group {header}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/2017/profiler1709/tui-logo.png" alt="Tui" width="68" height="30" style="display:block; font-family:'Tui', Calibri, Helvetica, Arial, sans-serif; font-size:14px; color:#092a5e;" border="0"></a></td>
+                                        <td align="right" valign="middle"><a href="%%track {[return https://www.tui.co.uk?$tracking]} -group {header}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/2017/profiler1709/dys.png" alt="Discover your smile" width="162" height="30" style="display:block; font-family:'Tui', Calibri, Helvetica, Arial, sans-serif; font-size:14px; color:#092a5e;" border="0"></a></td>
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                                <tr>
+                                  <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="15" border="0" /></td>
+                                </tr>
+                              </table></td>
+                            <td style="font-size:0px; line-height:0px;" width="15"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="15" border="0" /></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <!--Navigation//-->
+                    <tr>
+                      <td valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td align="center" valign="top" bgcolor="#e2f3fe" style="padding-top:12px; padding-bottom:13px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td align="center" valign="middle" style="font-family:'Tui', Calibri, Helvetica, Arial, sans-serif; font-size:11px; line-height:15px; color:#092a5e; mso-line-height-rule:exactly; text-transform:uppercase;"><a href="%%track {[return http://www.tui.co.uk/holidays/last-minute?$tracking]} -group {nav1}%%" style="color:#092a5e; text-decoration:none;">Late deals</a></td>
+                                  <td align="center" valign="middle" style="font-family:'Tui', Calibri, Helvetica, Arial, sans-serif; font-size:11px; line-height:15px; color:#092a5e; mso-line-height-rule:exactly; text-transform:uppercase;"><a href="%%track {[return http://www.tui.co.uk/holidays/all-inclusive?$tracking]} -group {nav2}%%" style="color:#092a5e; text-decoration:none;">All Inclusive</a></td>
+                                  <td align="center" valign="middle" style="font-family:'Tui', Calibri, Helvetica, Arial, sans-serif; font-size:11px; line-height:15px; color:#092a5e; mso-line-height-rule:exactly; text-transform:uppercase;"><a href="%%track {[return http://www.tui.co.uk/destinations/info/my-tui-app?$tracking]} -group {nav3}%%" style="color:#092a5e; text-decoration:none;">Download the app</a></td>
+                                  <td class="mobile-hide" align="center" valign="middle" style="font-family:'Tui', Calibri, Helvetica, Arial, sans-serif; font-size:11px; line-height:15px; color:#092a5e; mso-line-height-rule:exactly; text-transform:uppercase;"><a href="%%track {[return http://www.tui.co.uk?$tracking]} -group {nav4}%%" style="color:#092a5e; text-decoration:none;">Holidays</a></td>
+                                  <td class="mobile-hide" align="center" valign="middle" style="font-family:'Tui', Calibri, Helvetica, Arial, sans-serif; font-size:11px; line-height:15px; color:#092a5e; mso-line-height-rule:exactly; text-transform:uppercase;"><a href="%%track {[return http://www.tui.co.uk/cruise?$tracking]} -group {nav5}%%" style="color:#092a5e; text-decoration:none;">Cruises</a></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <!--//Navigation--> 
+                    
+                    <!--MAIN BANNER//-->
+                    <tr>
+                      <td valign="top" align="left"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td style="font-size:0px; line-height:0px;" width="20" class="mobile-hide"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="20" height="15" border="0" /></td>
+                            <td><table width="100%" cellspacing="0" border="0" align="center" cellpadding="0">
+                                <tr class="mobile-hide">
+                                  <td style="font-size:0; line-height:0px;"><a href="%%track {[return https://www.tui.co.uk/destinations/deals/summer-holidays?$tracking]} -group {mb}%%"><img width="100%" src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH140207/spacer.gif" style="display:block" height="50" border="0" /></a></td>
+                                </tr>
+                                <tr>
+                                  <td align="left"><a href="%%track {[return https://www.tui.co.uk/destinations/deals/summer-holidays?$tracking]} -group {mb}%%" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:30px; line-height:36px; mso-line-height-rule: exactly; text-transform:uppercase; text-decoration:none;" class="mobile-hero-alt-text"><img src="http://cslb.creatormail.co.uk/sites/tui/2018/SB/TUI/180622/hero-type.png" style="display:block"  width="300" height="81" border="0" class="hero-padding" alt="Save on summer escapes..." /> </a></td>
+                                </tr>
+                                <tr class="mobile-hide">
+                                  <td style="font-size:0; line-height:0px;"><a href="%%track {[return https://www.tui.co.uk/destinations/deals/summer-holidays?$tracking]} -group {mb}%%"><img width="100%" src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH140207/spacer.gif" style="display:block" height="10" border="0"  /></a></td>
+                                </tr>
+                                <tr>
+                                  <td align="left"><table class="hero-copy" border="0" cellspacing="0" cellpadding="0" width="400">
+                                      <tr>
+                                        <td align="left" style="font-family:'Tui', Calibri,Helvetica,Arial, sans-serif; font-size:18px; line-height:19px; mso-line-height-rule: exactly; color:#092a5e;"><a href="%%track {[return https://www.tui.co.uk/destinations/deals/summer-holidays?$tracking]} -group {mb}%%" style="color:#ffffff; text-decoration:none;">The sun doesn’t always shine at home – but things are hotting up in these destinations</a></td>
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                             
+                          
+                                 
+                               <tr class="mobile-hide">
+                                  <td style="font-size:0; line-height:0px;"><a href="%%track {[return https://www.tui.co.uk/destinations/deals/summer-holidays?$tracking]} -group {mb}%%"><img width="100%" src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH140207/spacer.gif" style="display:block" height="50" border="0" /></a></td>
+                                </tr>
+                            
+                            
+                               <tr>
+                            <td align="center"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="fluid95">
+                                <tr>
+                                  <td class="mobile-float" valign="top" width="304"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td align="center" width="146"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                              <td class="OpacityBlockBlue" bgcolor="#70cbf4"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tr>
+                                                    <td style="font-size:0px; line-height:0px;" width="8"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" /></td>
+                                                    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                          <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td valign="top" align="left" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:16px; line-height:18px; mso-line-height-rule: exactly; text-transform:uppercase;"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=BRS&units%5B%5D=023108%3AHOTEL&when=04-07-2018&until=&flexibility=false&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {MB1}%%" style="text-decoration:none; color:#092a5e;"><strong>Cape Verde</strong></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="2" border="0" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td valign="top" align="left" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:12px; line-height:18px; mso-line-height-rule: exactly;"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=BRS&units%5B%5D=023108%3AHOTEL&when=04-07-2018&until=&flexibility=false&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {MB1}%%" style="text-decoration:none; color:#092a5e;">7 nights from</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="2" border="0" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td valign="top" align="left" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:18px; line-height:18px; mso-line-height-rule: exactly;"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=BRS&units%5B%5D=023108%3AHOTEL&when=04-07-2018&until=&flexibility=false&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {MB1}%%" style="text-decoration:none; color:#092a5e;">&pound;711*</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" /></td>
+                                                        </tr>
+                                                      </table></td>
+                                                    <td style="font-size:0px; line-height:0px;" width="8"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=BRS&units%5B%5D=023108%3AHOTEL&when=04-07-2018&until=&flexibility=false&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {MB1}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH16_Master/CTA/dark.png" style="display:block"  width="12" height="12" border="0" /></a></td>
+                                                    <td style="font-size:0px; line-height:0px;" width="8"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="8" height="8" border="0" /></td>
+                                                  </tr>
+                                                </table></td>
+                                            </tr>
+                                          </table></td>
+                                        <td style="font-size:0px; line-height:0px;" width="12"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="12" height="15" border="0" /></td>
+                                        <td align="center" width="146"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                              <td class="OpacityBlockBlue" bgcolor="#70cbf4"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tr>
+                                                    <td style="font-size:0px; line-height:0px;" width="8"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" /></td>
+                                                    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                          <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td valign="top" align="left" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:16px; line-height:18px; mso-line-height-rule: exactly; text-transform:uppercase;"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=LGW&units%5B%5D=038727%3AHOTEL&when=04-07-2018&until=&flexibility=false&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {MB2}%%" style="text-decoration:none; color:#092a5e;"><strong>Canaries</strong></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="2" border="0" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td valign="top" align="left" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:12px; line-height:18px; mso-line-height-rule: exactly;"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=LGW&units%5B%5D=038727%3AHOTEL&when=04-07-2018&until=&flexibility=false&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {MB2}%%" style="text-decoration:none; color:#092a5e;">7 nights from</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="2" border="0" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td valign="top" align="left" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:18px; line-height:18px; mso-line-height-rule: exactly;"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=LGW&units%5B%5D=038727%3AHOTEL&when=04-07-2018&until=&flexibility=false&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {MB2}%%" style="text-decoration:none; color:#092a5e;">&pound;295*</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" /></td>
+                                                        </tr>
+                                                      </table></td>
+                                                    <td style="font-size:0px; line-height:0px;" width="8"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=LGW&units%5B%5D=038727%3AHOTEL&when=04-07-2018&until=&flexibility=false&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {MB2}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH16_Master/CTA/dark.png" style="display:block"  width="12" height="12" border="0" /></a></td>
+                                                    <td style="font-size:0px; line-height:0px;" width="8"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="8" height="8" border="0" /></td>
+                                                  </tr>
+                                                </table></td>
+                                            </tr>
+                                          </table></td>
+                                      </tr>
+                                    </table></td>
+                                  <td class="mobile-float" style="font-size:0px; line-height:0px;" width="12"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="12" height="12" border="0" /></td>
+                                  <td class="mobile-float" valign="top" width="304"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td align="center" width="146"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                              <td class="OpacityBlockBlue" bgcolor="#70cbf4"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tr>
+                                                    <td style="font-size:0px; line-height:0px;" width="8"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" /></td>
+                                                    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                          <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td valign="top" align="left" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:16px; line-height:18px; mso-line-height-rule: exactly; text-transform:uppercase;"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=LTN&units%5B%5D=026259%3AAPARTMENT_HOTEL&when=01-10-2018&until=&flexibility=false&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {MB3}%%" style="text-decoration:none; color:#092a5e;"><strong>Turkey</strong></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="2" border="0" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td valign="top" align="left" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:12px; line-height:18px; mso-line-height-rule: exactly;"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=LTN&units%5B%5D=026259%3AAPARTMENT_HOTEL&when=01-10-2018&until=&flexibility=false&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {MB3}%%" style="text-decoration:none; color:#092a5e;">7 nights from</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="2" border="0" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td valign="top" align="left" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:18px; line-height:18px; mso-line-height-rule: exactly;"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=LTN&units%5B%5D=026259%3AAPARTMENT_HOTEL&when=01-10-2018&until=&flexibility=false&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {MB3}%%" style="text-decoration:none; color:#092a5e;">&pound;370*</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" /></td>
+                                                        </tr>
+                                                      </table></td>
+                                                    <td style="font-size:0px; line-height:0px;" width="8"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=LTN&units%5B%5D=026259%3AAPARTMENT_HOTEL&when=01-10-2018&until=&flexibility=false&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {MB3}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH16_Master/CTA/dark.png" style="display:block"  width="12" height="12" border="0" /></a></td>
+                                                    <td style="font-size:0px; line-height:0px;" width="8"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="8" height="8" border="0" /></td>
+                                                  </tr>
+                                                </table></td>
+                                            </tr>
+                                          </table></td>
+                                        <td style="font-size:0px; line-height:0px;" width="12"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="12" height="15" border="0" /></td>
+                                        <td align="center" width="146"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                              <td class="OpacityBlockBlue" bgcolor="#70cbf4"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tr>
+                                                    <td style="font-size:0px; line-height:0px;" width="8"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" /></td>
+                                                    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                          <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td valign="top" align="left" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:16px; line-height:18px; mso-line-height-rule: exactly; text-transform:uppercase;"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=STN&units%5B%5D=010552%3ASELF_CATERED&when=30-09-2018&until=&flexibility=false&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {MB4}%%" style="text-decoration:none; color:#092a5e;"><strong>Cyprus</strong></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="2" border="0" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td valign="top" align="left" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:12px; line-height:18px; mso-line-height-rule: exactly;"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=STN&units%5B%5D=010552%3ASELF_CATERED&when=30-09-2018&until=&flexibility=false&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {MB4}%%" style="text-decoration:none; color:#092a5e;">7 nights from</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="2" border="0" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td valign="top" align="left" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:18px; line-height:18px; mso-line-height-rule: exactly;"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=STN&units%5B%5D=010552%3ASELF_CATERED&when=30-09-2018&until=&flexibility=false&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {MB4}%%" style="text-decoration:none; color:#092a5e;">&pound;465*</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" /></td>
+                                                        </tr>
+                                                      </table></td>
+                                                    <td style="font-size:0px; line-height:0px;" width="8"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=STN&units%5B%5D=010552%3ASELF_CATERED&when=30-09-2018&until=&flexibility=false&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {MB4}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH16_Master/CTA/dark.png" style="display:block"  width="12" height="12" border="0" /></a></td>
+                                                    <td style="font-size:0px; line-height:0px;" width="8"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="8" height="8" border="0" /></td>
+                                                  </tr>
+                                                </table></td>
+                                            </tr>
+                                          </table></td>
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr class="fluid100">
+                                  <td style="font-size:0; line-height:0px;"><a href="%%track {[return https://www.tui.co.uk/destinations/deals/summer-holidays?$tracking]} -group {mb}%%"><img width="100%" src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH140207/spacer.gif" style="display:block" height="20" border="0" /></a></td>
+                                </tr> 
+                                <tr align="center">
+                                  <td><table class="fluid100" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td align="center"><table  border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                              <td bgcolor="#092a5e"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tr>
+                                                    <td style="font-size:0px; line-height:0px;" width="20"><a href="%%track {[return https://www.tui.co.uk/destinations/deals/summer-holidays?$tracking]} -group {MBCTA}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="20" height="40" border="0" /></a></td>
+                                                    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                          <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="15" height="10" border="0" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td style="font-family:'Tui', Calibri, Helvetica, Arial, sans-serif; font-size:16px; line-height:16px; mso-line-height-rule: exactly; color:#ffffff; text-transform:uppercase;"><a href="%%track {[return https://www.tui.co.uk/destinations/deals/summer-holidays?$tracking]} -group {MBCTA}%%" style="text-decoration:none; color:#ffffff">See more deals</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="10" border="0" /></td>
+                                                        </tr>
+                                                      </table></td>
+                                                    <td style="font-size:0px; line-height:0px;" width="20"><a href="%%track {[return https://www.tui.co.uk/destinations/deals/summer-holidays?$tracking]} -group {MBCTA}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="20" height="15" border="0" /></a></td>
+                                                  </tr>
+                                                </table></td>
+                                            </tr>
+                                          </table></td>
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                            <tr>
+                                  <td style="font-size:0; line-height:0px;"><a href="%%track {[return https://www.tui.co.uk/destinations/deals/summer-holidays?$tracking]} -group {mb}%%"><img width="100%" src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH140207/spacer.gif" style="display:block" height="30" border="0" /></a></td>
+                                </tr>
+                            </table></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <!--//MAIN BANNER-->
+                    
+                  </table>
+                  
+                  <!--[if gte mso 9]> </v:textbox> </v:rect> <![endif]--></td>
+              </tr>
+            </table>
+            
+            <!--//Intro-->
+            
+           
+                   
+ 
+            
+             
+              
+             
+             
+             
+             <table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="20" /></td>
+              </tr>
+            </table>           
+            
+            
+<!-- sub banner -->
+            
+            <!--Strip// -->
+            
+             <!-- 4 Destination table// -->
+            
+			<table class="fluid90" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td bgcolor="#70cbf4"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+					  <td style="font-size:0px; line-height:0px;" width="20"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="20" height="15" border="0" /></td>
+					  <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+						  <tr>
+							<td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="20" border="0" /></td>
+						  </tr>
+						  <tr>
+							<td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+								  <td width="285" class="mobile-float"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+									  <tr>
+										<td style="font-family:'Tui', Calibri,  Helvetica, Arial, sans-serif; font-size:20px; line-height:26px; mso-line-height-rule: exactly; color:#ffffff; text-transform:uppercase;"><a href="%%track {[return https://www.tui.co.uk/destinations/deals/holiday-sales?$tracking]} -group {promocode}%%" style="color:#ffffff; text-decoration:none"><strong>save &pound;60 on  holidays from Manchester &amp; Birmingham</a></td>
+									  </tr>
+									</table></td>
+								  <td style="font-size:0; line-height:0px;" class="mobile-float"  width="10"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="5" /></td>
+								  <td class="mobile-float"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+									  <tr>
+										<td align="right"><table class="fluid100" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+											  <td align="center"><table  border="0" cellspacing="0" cellpadding="0">
+												  <tr>
+													<td bgcolor="#092a5e"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+														<tr>
+														  <td style="font-size:0px; line-height:0px;" width="20"><a href="%%track {[return https://www.tui.co.uk/destinations/deals/holiday-sales?$tracking]} -group {promocode}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="20" height="40" border="0" /></a></td>
+														  <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+															  <tr>
+																<td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="10" border="0" /></td>
+															  </tr>
+															  <tr>
+																<td style="font-family:'Tui', Calibri, Helvetica, Arial, sans-serif; font-size:26px; line-height:26px; mso-line-height-rule: exactly; color:#ffffff; text-transform:uppercase;" align="center"><a href="%%track {[return https://www.tui.co.uk/destinations/deals/holiday-sales?$tracking]} -group {promocode}%%" style="text-decoration:none; color:#ffffff">USE&nbsp;CODE<strong> MB60</strong></a></td>
+															  </tr>
+															  <tr>
+																<td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="10" border="0" /></td>
+															  </tr>
+															</table></td>
+														  <td style="font-size:0px; line-height:0px;" width="20"><a href="%%track {[return https://www.tui.co.uk/destinations/deals/holiday-sales?$tracking]} -group {promocode}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="20" height="15" border="0" /></a></td>
+														</tr>
+													  </table></td>
+												  </tr>
+												</table></td>
+											</tr>
+										  </table></td>
+									  </tr>
+									</table></td>
+								</tr>
+							  </table></td>
+						  </tr>
+						  <tr>
+							<td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="20" border="0" /></td>
+						  </tr>
+						</table></td>
+					  <td style="font-size:0px; line-height:0px;" width="20"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="20" height="15" border="0" /></td>
+					</tr>
+				</table></td>
+			  </tr>
+			</table>
+            <!--//Strip --> 
+            
+            
+              <!--Dynamic offer table -->    
+            <table class="fluid90" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="center" valign="middle" style="font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:18px; line-height:24px; mso-line-height-rule: exactly; color:#092a5e; text-transform:uppercase; padding:20px 10px 20px;"><a href="%%track {[return https://www.tui.co.uk/holidays/last-minute?$tracking]} -group {ottitle}%%" style="text-decoration:none; color:#092a5e">LAST-MINUTE OFFERS </a></td>
+              </tr>
+            </table>
+            <table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="nopad" align="center" valign="top" style="padding-bottom:15px;">
+                <table class="fluid90" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                
+                <td class="fluid100" valign="middle" width="620" bgcolor="#dbf2fc"><table width="100%" class="fluid90" align="center" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="15"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="15" height="10" /></td>
+                      <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td class="mobile-float"  style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:18px; line-height:18px; mso-line-height-rule: exactly; text-transform:uppercase;" valign="top"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=DSA&units%5B%5D=015901%3AAPARTMENT_HOTEL&when=06-05-2019&until=&flexibility=true&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {OT1}%%" style="text-decoration:none; color:#092a5e;">Turkey</a></td>
+                                  <td class="mobile-float" width="10" style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                                  <td  class="mobile-float" align="left" width="270"><table border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/t.png" alt="" border="0" style="display:block" width="13" height="12" /></td>
+                                        <td><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/t.png" alt="" border="0" style="display:block" width="13" height="12" /></td>
+                                        <td><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/t.png" alt="" border="0" style="display:block" width="13" height="12" /></td>
+                                        
+                                        
+                                        
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td  class="mobile-float"  style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; mso-line-height-rule: exactly;"> Doncaster Sheffield</td>
+                                  <td class="mobile-float" width="10" style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                                  <td  class="mobile-float"  width="270" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; mso-line-height-rule: exactly;"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=DSA&units%5B%5D=015901%3AAPARTMENT_HOTEL&when=06-05-2019&until=&flexibility=true&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {OT1}%%" style="color:#092a5e;text-decoration:none;">6th May 2019</a></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td  class="mobile-float" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; mso-line-height-rule: exactly;">7 Nights 2 People sharing on a SC basis</td>
+                                  <td class="mobile-float" width="10" style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                                  <td  class="mobile-float" width="270"> <a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=DSA&units%5B%5D=015901%3AAPARTMENT_HOTEL&when=06-05-2019&until=&flexibility=true&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {OT1}%%" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:16px;  line-height:18px; mso-line-height-rule: exactly; text-decoration:none"> from <strong>&pound;249*</strong></a></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+                          </tr>
+                        </table></td>
+                      <td style="font-size:0px; line-height:0px;" width="15"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=DSA&units%5B%5D=015901%3AAPARTMENT_HOTEL&when=06-05-2019&until=&flexibility=true&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {OT1}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/arrow-darkblue.png" style="display:block"  width="15" height="30" border="0" /></a></td>
+                      <td width="15"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="15" height="10" /></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table>
+                <table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+              </tr>
+            </table>
+                <table class="fluid90" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                
+                <td class="fluid100" valign="middle" width="620" bgcolor="#dbf2fc"><table width="100%" class="fluid90" align="center" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="15"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="15" height="10" /></td>
+                      <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td class="mobile-float"  style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:18px; line-height:18px; mso-line-height-rule: exactly; text-transform:uppercase;" valign="top"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=MAN&units%5B%5D=059260%3AHOTEL&when=16-10-2019&until=&flexibility=true&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {OT2}%%" style="text-decoration:none; color:#092a5e;">Menorca</a></td>
+                                  <td class="mobile-float" width="10" style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                                  <td  class="mobile-float" align="left" width="270"><table border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/t.png" alt="" border="0" style="display:block" width="13" height="12" /></td>
+                                        <td><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/t.png" alt="" border="0" style="display:block" width="13" height="12" /></td>
+                                        <td><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/t.png" alt="" border="0" style="display:block" width="13" height="12" /></td>
+                                               
+                                        
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td  class="mobile-float"  style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; mso-line-height-rule: exactly;">Manchester</td>
+                                  <td class="mobile-float" width="10" style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                                  <td  class="mobile-float"  width="270" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; mso-line-height-rule: exactly;"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=MAN&units%5B%5D=059260%3AHOTEL&when=16-10-2019&until=&flexibility=true&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {OT2}%%" style="color:#092a5e;text-decoration:none;">16th October 2019</a></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td  class="mobile-float" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; mso-line-height-rule: exactly;">7 Nights 2 People sharing on a SC basis</td>
+                                  <td class="mobile-float" width="10" style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                                 <td  class="mobile-float" width="270"> <a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=MAN&units%5B%5D=059260%3AHOTEL&when=16-10-2019&until=&flexibility=true&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {OT2}%%" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:16px;  line-height:18px; mso-line-height-rule: exactly; text-decoration:none"> from <strong>&pound;244*</strong></a></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+                          </tr>
+                        </table></td>
+                      <td style="font-size:0px; line-height:0px;" width="15"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=MAN&units%5B%5D=059260%3AHOTEL&when=16-10-2019&until=&flexibility=true&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {OT2}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/arrow-darkblue.png" style="display:block"  width="15" height="30" border="0" /></a></td>
+                      <td width="15"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="15" height="10" /></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table>
+                <table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+              </tr>
+            </table>
+                <table class="fluid90" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                
+                <td class="fluid100" valign="middle" width="620" bgcolor="#dbf2fc"><table width="100%" class="fluid90" align="center" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="15"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="15" height="10" /></td>
+                      <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td class="mobile-float"  style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:18px; line-height:18px; mso-line-height-rule: exactly; text-transform:uppercase;" valign="top">Greece</td>
+                                  <td class="mobile-float" width="10" style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                                  <td  class="mobile-float" align="left" width="270"><table border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/t.png" alt="" border="0" style="display:block" width="13" height="12" /></td>
+                                      <td><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/t.png" alt="" border="0" style="display:block" width="13" height="12" /></td>
+                                      
+                                    </tr>
+                                  </table></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td  class="mobile-float"  style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; mso-line-height-rule: exactly;"> Leeds Bradford</td>
+                                  <td class="mobile-float" width="10" style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                                  <td  class="mobile-float"  width="270" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; mso-line-height-rule: exactly;"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=LBA&units%5B%5D=027828%3AAPARTMENT_HOTEL&when=16-09-2019&until=&flexibility=true&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {OT3}%%" style="color:#092a5e;text-decoration:none;">16th September 2019</a></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td  class="mobile-float" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; mso-line-height-rule: exactly;">7 Nights 2 People sharing on a SC basis</td>
+                                  <td class="mobile-float" width="10" style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                                  <td  class="mobile-float" width="270"> <a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=LBA&units%5B%5D=027828%3AAPARTMENT_HOTEL&when=16-09-2019&until=&flexibility=true&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {OT3}%%" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:16px;  line-height:18px; mso-line-height-rule: exactly; text-decoration:none"> from <strong>&pound;213*</strong></a></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+                          </tr>
+                        </table></td>
+                      <td style="font-size:0px; line-height:0px;" width="15"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=LBA&units%5B%5D=027828%3AAPARTMENT_HOTEL&when=16-09-2019&until=&flexibility=true&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {OT3}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/arrow-darkblue.png" style="display:block"  width="15" height="30" border="0" /></a></td>
+                      <td width="15"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="15" height="10" /></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table>
+                <table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+              </tr>
+            </table>
+                <table class="fluid90" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                
+                <td class="fluid100" valign="middle" width="620" bgcolor="#dbf2fc"><table width="100%" class="fluid90" align="center" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="15"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="15" height="10" /></td>
+                      <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td class="mobile-float"  style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:18px; line-height:18px; mso-line-height-rule: exactly; text-transform:uppercase;" valign="top"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=LGW&units%5B%5D=001966%3AAPARTMENT_HOTEL&when=01-05-2019&until=&flexibility=true&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {OT4}%%" style="text-decoration:none; color:#092a5e;">Florida</a></td>
+                                  <td class="mobile-float" width="10" style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                                  <td  class="mobile-float" align="left" width="270"><table border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/t.png" alt="" border="0" style="display:block" width="13" height="12" /></td>
+                                        <td><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/t.png" alt="" border="0" style="display:block" width="13" height="12" /></td>
+                                        <td><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/t.png" alt="" border="0" style="display:block" width="13" height="12" /></td>
+                                      
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td  class="mobile-float"  style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; mso-line-height-rule: exactly;"> London Gatwick</td>
+                                  <td class="mobile-float" width="10" style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                                  <td  class="mobile-float"  width="270" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; mso-line-height-rule: exactly;"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=LGW&units%5B%5D=001966%3AAPARTMENT_HOTEL&when=01-05-2019&until=&flexibility=true&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {OT4}%%" style="color:#092a5e;text-decoration:none;">1st  May 2019</a></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td  class="mobile-float" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; mso-line-height-rule: exactly;">7 Nights 2 People sharing on a RO basis</td>
+                                  <td class="mobile-float" width="10" style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                          <td  class="mobile-float" width="270"> <a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=LGW&units%5B%5D=001966%3AAPARTMENT_HOTEL&when=01-05-2019&until=&flexibility=true&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {OT4}%%" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:16px;  line-height:18px; mso-line-height-rule: exactly; text-decoration:none"> from <strong>&pound;766*</strong></a></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+                          </tr>
+                        </table></td>
+                      <td style="font-size:0px; line-height:0px;" width="15"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=LGW&units%5B%5D=001966%3AAPARTMENT_HOTEL&when=01-05-2019&until=&flexibility=true&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {OT4}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/arrow-darkblue.png" style="display:block"  width="15" height="30" border="0" /></a></td>
+                      <td width="15"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="15" height="10" /></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table>
+                <table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+              </tr>
+            </table>
+                <table class="fluid90" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                
+                <td class="fluid100" valign="middle" width="620" bgcolor="#dbf2fc"><table width="100%" class="fluid90" align="center" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="15"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="15" height="10" /></td>
+                      <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td class="mobile-float"  style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:18px; line-height:18px; mso-line-height-rule: exactly; text-transform:uppercase;" valign="top"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=DSA&units%5B%5D=975679%3AHOTEL&when=02-05-2019&until=&flexibility=true&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {OT5}%%" style="text-decoration:none; color:#092a5e;">Egypt</a></td>
+                                  <td class="mobile-float" width="10" style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                                  <td  class="mobile-float" align="left" width="270"><table border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/t.png" alt="" border="0" style="display:block" width="13" height="12" /></td>
+                                        <td><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/t.png" alt="" border="0" style="display:block" width="13" height="12" /></td>
+                                        <td><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/t.png" alt="" border="0" style="display:block" width="13" height="12" /></td>
+                                        
+                             
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td  class="mobile-float"  style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; mso-line-height-rule: exactly;">Doncaster Sheffield</td>
+                                  <td class="mobile-float" width="10" style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                                  <td  class="mobile-float"  width="270" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; mso-line-height-rule: exactly;"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=DSA&units%5B%5D=975679%3AHOTEL&when=02-05-2019&until=&flexibility=true&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {OT5}%%" style="color:#092a5e;text-decoration:none;">2nd May 2019</a></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td  class="mobile-float" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; mso-line-height-rule: exactly;">7 Nights 2 People sharing on a AI basis</td>
+                                  <td class="mobile-float" width="10" style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                       <td  class="mobile-float" width="270"> <a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=DSA&units%5B%5D=975679%3AHOTEL&when=02-05-2019&until=&flexibility=true&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {OT5}%%" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:16px;  line-height:18px; mso-line-height-rule: exactly; text-decoration:none"> from <strong>&pound;589*</strong></a></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+                          </tr>
+                        </table></td>
+                      <td style="font-size:0px; line-height:0px;" width="15"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=DSA&units%5B%5D=975679%3AHOTEL&when=02-05-2019&until=&flexibility=true&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {OT5}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/arrow-darkblue.png" style="display:block"  width="15" height="30" border="0" /></a></td>
+                      <td width="15"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="15" height="10" /></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table>
+                <table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+              </tr>
+            </table>
+                <table class="fluid90" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                
+                <td class="fluid100" valign="middle" width="620" bgcolor="#dbf2fc"><table width="100%" class="fluid90" align="center" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="15"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="15" height="10" /></td>
+                      <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td class="mobile-float"  style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:18px; line-height:18px; mso-line-height-rule: exactly; text-transform:uppercase;" valign="top"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=MAN&units%5B%5D=056162%3AHOTEL&when=03-05-2019&until=&flexibility=true&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {OT6}%%" style="text-decoration:none; color:#092a5e;">Morocco</a></td>
+                                  <td class="mobile-float" width="10" style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                                  <td  class="mobile-float" align="left" width="270"><table border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/t.png" alt="" border="0" style="display:block" width="13" height="12" /></td>
+                                        <td><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/t.png" alt="" border="0" style="display:block" width="13" height="12" /></td>
+                                           <td><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/t.png" alt="" border="0" style="display:block" width="13" height="12" /></td>
+                                        
+                                        
+                                        
+                                        
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td  class="mobile-float"  style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; mso-line-height-rule: exactly;"> Manchester</td>
+                                  <td class="mobile-float" width="10" style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                                  <td  class="mobile-float"  width="270" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; mso-line-height-rule: exactly;"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=MAN&units%5B%5D=056162%3AHOTEL&when=03-05-2019&until=&flexibility=true&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {OT6}%%" style="color:#092a5e;text-decoration:none;">3rd May 2019</a></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td  class="mobile-float" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:14px; line-height:17px; mso-line-height-rule: exactly;">7 Nights 2 People sharing on a AI basis</td>
+                                  <td class="mobile-float" width="10" style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="4" /></td>
+                                  <td  class="mobile-float" width="270"> <a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=MAN&units%5B%5D=056162%3AHOTEL&when=03-05-2019&until=&flexibility=true&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {OT6}%%" style="color:#092a5e; font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:16px;  line-height:18px; mso-line-height-rule: exactly; text-decoration:none"> from <strong>&pound;442*</strong></a></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+                          </tr>
+                        </table></td>
+                      <td style="font-size:0px; line-height:0px;" width="15"><a href="%%track {[return https://www.tui.co.uk/destinations/packages?airports%5B%5D=MAN&units%5B%5D=056162%3AHOTEL&when=03-05-2019&until=&flexibility=true&flexibleDays=3&noOfAdults=2&noOfChildren=0&childrenAge=&duration=7114&searchRequestType=ins&searchType=search&sp=true&multiSelect=true&room=&isVilla=false&$tracking]} -group {OT6}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/arrow-darkblue.png" style="display:block"  width="15" height="30" border="0" /></a></td>
+                      <td width="15"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="15" height="10" /></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table>
+                <table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+              </tr>
+            </table>                                    
+                </td>
+              </tr>
+              <tr>
+                <td align="center"><table class="fluid95" border="0" cellspacing="0" cellpadding="0" width="100%">
+                    <tr>
+                      <td align="right"><table border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td bgcolor="#092a5e" height="30"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td style="font-size:0px; line-height:0px;" width="15"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="15" border="0" /></td>
+                                  <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="6" border="0" /></td>
+                                      </tr>
+                                      <tr>
+                                        <td style="font-family:'Tui', Calibri, Helvetica, Arial, sans-serif; font-size:14px; line-height:14px; mso-line-height-rule: exactly; color:#ffffff; text-transform:uppercase;"><a href="%%track {[return https://www.tui.co.uk/destinations/deals/summer-holiday-deals?$tracking]} -group {OTCTA}%%" style="color:#ffffff; text-decoration:none;">See deals</a></td>
+                                      </tr>
+                                      <tr>
+                                        <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="6" border="0" /></td>
+                                      </tr>
+                                    </table></td>
+                                  <td style="font-size:0px; line-height:0px;" width="15"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="15" border="0" /></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td valign="top" style="font-size:0px; line-height:0px;" align="center"><img width="10" src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" height="20" style="display:block" alt="" border="0" /></td>
+              </tr>
+            </table>
+            
+            <!--Dynamic offer table --> 
+                                
+<!-- sub banner of two halves --> 
+            <!-- structurally pointless collapsing table -->
+            
+               <table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="20" /></td>
+              </tr>
+            </table> 
+            
+            
+            
+            <!--Discover article promo// -->
+            <table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#70cbf4"><table width="100%" border="0" cellspacing="0" cellpadding="12">
+                    <tr>
+                      <td align="center"><table border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td align="center" valign="middle" style="font-family:'Tui', Calibri, Helvetica, Arial, sans-serif; font-size:19px; line-height:27px; mso-line-height-rule: exactly; color:#092a5e;"><a href="%%track {[return https://www.tui.co.uk/destinations/discover/culture/best-summer-holiday-destinations-europe-2018?$tracking]} -group {discover}%%" style="color:#092a5e; text-decoration:none">Revealed: the MUST-VISIT places for summer...</a></td>
+                            <td width="22" align="right"><a href="%%track {[return https://www.tui.co.uk/destinations/europe/spain/ibiza/articles/which-balearic-island-is-for-you?$tracking]} -group {discover}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/tui-arrow-dark-blue.png" style="display:block" width="8" border="0" height="11" /></a></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table>
+            
+            <!--//Discover article promo --> 
+             
+              
+    <table bgcolor="#ffffff" class="device-width" id="yahoo-resize" width="750" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+        <tr>
+          <td align="center" valign="top">
+           
+           <!-- 20px height spacer// -->
+            <table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="20" /></td>
+              </tr>
+            </table>
+            
+            <!-- //20px height spacer// --> 
+            <!-- TOARIST BOARDS -->
+            <table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="center" valign="top" style="background-image: url(http://cslb.creatormail.co.uk/sites/tui/2018/SB/TB/June/tui-tb-morocco.jpg); background-repeat:no-repeat;" background="http://cslb.creatormail.co.uk/sites/tui/2018/SB/TB/June/tui-tb-morocco.jpg" class="tb-bg">
+                <!--[if gte mso 9]>
+                 <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=“width:620px;height:200px;"><v:fill type=“frame" src="http://cslb.creatormail.co.uk/sites/tui/2018/SB/TB/June/tui-tb-morocco.jpg" color="#cfb296" /><v:textbox inset="0,0,0,0"><![endif]-->
+                  
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td style="font-size:0px; line-height:0px;" width="15" class="mobile-hide"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="15" border="0" /></td>
+                      <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr class="mobile-hide">
+                            <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="100%" height="15" border="0" /></td>
+                          </tr>
+                          <tr>
+                            <td><table border="0" width="250" cellspacing="0" cellpadding="0" class="fluid100 tb-copy">
+                                <tr>
+                                  <td bgcolor="#70cbf4" class="OpacityBlockBlue"><table  border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" /></td>
+                                      </tr>
+                                      <tr>
+                                        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                              <td style="font-size:0px; line-height:0px;" width="10"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0"/></td>
+                                              <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tr>
+                                                    <td  style="font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:16px; line-height:21px; mso-line-height-rule: exactly; color:#092a5e;" align="left"><a href="%%track {[return https://www.tui.co.uk/destinations/africa/morocco/holidays-morocco.html?$tracking]} -group {Promo}%%" style="color: #092a5e; text-decoration:none;">Brighten up your summer with a trip to colourful Morocco.<br />
+                                                    From &pound;513*</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" /></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td style="font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:14px; line-height:18px; mso-line-height-rule: exactly; color:#092a5e;" align="left"><table class="fluid100" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                          <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+                                                              <tr>
+                                                                <td bgcolor="#092a5e"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                      <td style="font-size:0px; line-height:0px;" width="15"><a href="%%track {[return https://www.tui.co.uk/destinations/africa/morocco/holidays-morocco.html?$tracking]} -group {Promo}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="30" border="0" /></a></td>
+                                                                      <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                          <tr>
+                                                                            <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="8" border="0" /></td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td style="font-family:'Tui', Calibri, Helvetica, Arial, sans-serif; font-size:14px; line-height:14px; mso-line-height-rule: exactly; color:#ffffff; text-transform:uppercase;"><a href="%%track {[return https://www.tui.co.uk/destinations/africa/morocco/holidays-morocco.html?$tracking]} -group {Promo}%%" style="text-decoration:none; color:#ffffff">Find out more</a></td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="8" border="0" /></td>
+                                                                          </tr>
+                                                                        </table></td>
+                                                                      <td style="font-size:0px; line-height:0px;" width="15"><a href="%%track {[return https://www.tui.co.uk/destinations/africa/morocco/holidays-morocco.html?$tracking]} -group {Promo}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="15" border="0" /></a></td>
+                                                                    </tr>
+                                                                  </table></td>
+                                                              </tr>
+                                                            </table></td>
+                                                        </tr>
+                                                      </table></td>
+                                                  </tr>
+                                                </table></td>
+                                              <td style="font-size:0px; line-height:0px;" width="10"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" /></td>
+                                            </tr>
+                                          </table></td>
+                                      </tr>
+                                      <tr>
+                                        <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" /></td>
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr  class="mobile-hide">
+                            <td style="font-size:0px; line-height:0px;"><a href="%%track {[return https://www.tui.co.uk/destinations/africa/morocco/holidays-morocco.html?$tracking]} -group {Promo}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="100%" height="65" border="0" class="dest-spacer" /></a></td>
+                          </tr>
+                        </table></td>
+                      <td style="font-size:0px; line-height:0px;" width="20" class="mobile-hide"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="20" height="15" border="0" /></td>
+                    </tr>
+                  </table>
+                  
+                  <!--[if gte mso 9]>
+</v:textbox></v:rect><![endif]--></td>
+              </tr>
+            </table>
+            <!-- TOARIST BOARDS --> 
+           
+            
+            </td>
+        </tr>
+      </table>   
+               
+                       
+                            <!--Catchall//-->
+            <table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="20" /></td>
+			  </tr>
+			</table>
+            <table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                
+                <!--Block 2//-->
+                <td class="mobile-float" width="305" valign="top"><table class="fluid100" bgcolor="#FFFFFF" width="305" border="0" cellspacing="0" cellpadding="0"  align="right">
+                    <tr>
+                      <td background="http://cslb.creatormail.co.uk/sites/tui/2018/SB/TUI/180223/ca2.jpg" style="background-position:left top;" bgcolor="#f5f5f5" width="305" valign="top"><!--[if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:305px;height:242px;">
+<v:fill type="frame" src="http://cslb.creatormail.co.uk/sites/tui/2018/SB/TUI/180223/ca2.jpg" color="#f5f5f5" />
+<v:textbox inset="0,0,0,0">
+<div>
+<![endif]-->
+                        
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td style="font-size:0px; line-height:0px;"><a href="%%track {[return https://www.tui.co.uk/destinations/free-child-places?$tracking]} -group {catchall1}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="100%" height="120" border="0" /></a></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td style="font-size:0; line-height:0px;" width="10"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+                                  <td bgcolor="#ffffff" class="OpacityBlockWhite mobile-float margin-bottom-10" width="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" /></td>
+                                      </tr>
+                                      <tr>
+                                        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                              <td style="font-size:0px; line-height:0px;" width="10"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="50"   border="0"/></td>
+                                              <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tr>
+                                                    <td valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                          <td valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                              <tr>
+                                                                <td  style="font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:18px; line-height:22px; mso-line-height-rule: exactly; color:#092a5e;" align="left"><a href="%%track {[return https://www.tui.co.uk/destinations/free-child-places?$tracking]} -group {catchall1}%%" style="color: #092a5e; text-decoration:none;">Free kids' places*</a></td>
+                                                              </tr>
+                                                            </table></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="5" border="0" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td align="left" valign="top" style="font-family: 'tui',Helvetica,Arial,sans-serif;
+font-size: 11px;
+line-height: 15px; color:#ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                              <tr>
+                                                                <td height="48" class="height-auto" align="left" valign="top" style="font-family:'Tui', Calibri, Helvetica, Arial, sans-serif; font-size:13px; line-height:16px; mso-line-height-rule: exactly; color:#092a5e;"><a href="%%track {[return https://www.tui.co.uk/destinations/free-child-places?$tracking]} -group {catchall1}%%" style="color:#092a5e; text-decoration:none;">Save yourself some pennies by securing one of our free kids' places. </a></td>
+                                                              </tr>
+                                                            </table></td>
+                                                        </tr>
+                                                      </table></td>
+                                                  </tr>
+                                                </table></td>
+                                              <td style="font-size:0px; line-height:0px;" width="4"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="4" height="10" border="0" /></td>
+                                              <td width="10" ><a href="%%track {[return https://www.tui.co.uk/destinations/free-child-places?$tracking]} -group {catchall1}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/tui-arrow-dark-blue.png" style="display:block"  width="10" height="17" border="0" /></a></td>
+                                              <td style="font-size:0px; line-height:0px;" width="10"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" /></td>
+                                            </tr>
+                                          </table></td>
+                                      </tr>
+                                      <tr>
+                                        <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" /></td>
+                                      </tr>
+                                    </table></td>
+                                  <td style="font-size:0px; line-height:0px;"><a href="%%track {[return https://www.tui.co.uk/destinations/free-child-places?$tracking]} -group {catchall1}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="90"  height="70" border="0" /></a></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="15" border="0" /></td>
+                          </tr>
+                        </table>
+                        
+                        <!--[if gte mso 9]>
+</div>
+</v:textbox>
+</v:rect>
+<![endif]--></td>
+                    </tr>
+                  </table></td>
+                <!--//Block 2-->
+                <td class="mobile-float"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+                <!--Block 1//-->
+                <td class="mobile-float" width="305" valign="top"><table class="fluid100" bgcolor="#FFFFFF" width="305" border="0" cellspacing="0" cellpadding="0"  align="right">
+                    <tr>
+                      <td background="http://cslb.creatormail.co.uk/sites/tui/2018/SB/TUI/180424/ca2.jpg" style="background-position:right top;" bgcolor="#f5f5f5" width="305" valign="top"><!--[if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:305px;height:242px;">
+<v:fill type="frame" src="http://cslb.creatormail.co.uk/sites/tui/2018/SB/TUI/180424/ca2.jpg" color="#f5f5f5" />
+<v:textbox inset="0,0,0,0">
+<div>
+<![endif]-->
+                        
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td style="font-size:0px; line-height:0px;"><a href="%%track {[return https://www.tui.co.uk/destinations/info/low-deposit?$tracking]} -group {catchall2}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="100%" height="120" border="0" /></a></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td style="font-size:0; line-height:0px;" width="10"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+                                  <td bgcolor="#ffffff" class="OpacityBlockWhite mobile-float margin-bottom-10" width="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" /></td>
+                                      </tr>
+                                      <tr>
+                                        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                              <td style="font-size:0px; line-height:0px;" width="10"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="50"   border="0"/></td>
+                                              <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tr>
+                                                    <td valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                          <td valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                              <tr>
+                                                                <td  style="font-family: 'Tui', 'Calibri', Helvetica, Arial, sans-serif; font-size:18px; line-height:22px; mso-line-height-rule: exactly; color:#092a5e;" align="left"><a href="%%track {[return https://www.tui.co.uk/destinations/info/low-deposit?$tracking]} -group {catchall2}%%" style="color: #092a5e; text-decoration:none;">Low deposits*</a></td>
+                                                              </tr>
+                                                            </table></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="5" border="0" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td align="left" valign="top" style="font-family: 'tui',Helvetica,Arial,sans-serif;
+font-size: 11px;
+line-height: 15px; color:#ffffff;"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                              <tr>
+                                                                <td height="48" class="height-auto" align="left" valign="top" style="font-family:'Tui', Calibri, Helvetica, Arial, sans-serif; font-size:13px; line-height:16px; mso-line-height-rule: exactly; color:#092a5e;"><a href="%%track {[return https://www.tui.co.uk/destinations/info/low-deposit?$tracking]} -group {catchall2}%%" style="color:#092a5e; text-decoration:none;">Our low deposits mean you don't need to wait until payday to book your 2019 break.</a></td>
+                                                              </tr>
+                                                            </table></td>
+                                                        </tr>
+                                                      </table></td>
+                                                  </tr>
+                                                </table></td>
+                                              <td style="font-size:0px; line-height:0px;" width="4"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="4" height="10" border="0" /></td>
+                                              <td width="10" ><a href="%%track {[return https://www.tui.co.uk/destinations/info/low-deposit?$tracking]} -group {catchall2}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TH/Master/tui-arrow-dark-blue.png" style="display:block"  width="10" height="17" border="0" /></a></td>
+                                              <td style="font-size:0px; line-height:0px;" width="10"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" /></td>
+                                            </tr>
+                                          </table></td>
+                                      </tr>
+                                      <tr>
+                                        <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" /></td>
+                                      </tr>
+                                    </table></td>
+                                  <td style="font-size:0px; line-height:0px;"><a href="%%track {[return https://www.tui.co.uk/destinations/info/low-deposit?$tracking]} -group {catchall2}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="90"  height="70" border="0" /></a></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="15" border="0" /></td>
+                          </tr>
+                        </table>
+                        
+                        <!--[if gte mso 9]>
+</div>
+</v:textbox>
+</v:rect>
+<![endif]--></td>
+                    </tr>
+                  </table></td>
+                <!--//Block 1--> 
+                
+              </tr>
+            </table>
+            <!--//Catchall--> 
+            
+            
+            
+            <!-- *Footer*// -->
+            
+            <table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+            
+            
+              <!-- ********** SOCIAL BANNER ********** -->
+              <tr>
+                <td bgcolor="#ffffff" style="padding-top:21px; padding-left:20px; padding-bottom:21px;" align="left"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td width="95" class="mobile-float" style="font-family:'Tui', Calibri, Helvetica, Arial, sans-serif; font-size:14px; line-height:14px; mso-line-height-rule: exactly; color:#000000; text-transform:uppercase;">Follow us</td>
+                      <td style="font-size:0px; line-height:0px;" width="10" class="mobile-float"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="6" border="0" /></td>
+                      <td class="mobile-float"><table border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="33"><a href="%%track {[return https://www.facebook.com/TUIUnitedKingdom?$tracking]} -group {FB}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/TUI/_MASTER/Icons/tui-facebook.png" style="display:block"  width="24" height="24" border="0" /></a></td>
+                            <td width="33"><a href="%%track {[return https://www.instagram.com/tuiuk?$tracking]} -group {INST}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/TUI/_MASTER/Icons/tui-instagram.png" style="display:block"  width="24" height="24" border="0" /></a></td>
+                            <td width="33"><a href="%%track {[return https://twitter.com/TUIUK?$tracking]} -group {TWI}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/TUI/_MASTER/Icons/tui-twitter.png" style="display:block"  width="24" height="24" border="0" /></a></td>
+                            <td width="33"><a href="%%track {[return https://www.youtube.com/user/ThomsonHols?$tracking]} -group {YT}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/TUI/_MASTER/Icons/tui-youtube.png" style="display:block"  width="24" height="24" border="0" /></a></td>
+                            <td width="33"><a href="%%track {[return https://www.pinterest.co.uk/tuiholidays/?$tracking]} -group {PI}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/TUI/_MASTER/Icons/tui-pinterest.png" style="display:block"  width="24" height="24" border="0" /></a></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <!-- ********** END SOCIAL BNR ********** --> 
+              
+              <!--FOOTER-->
+              <tr>
+                <td align="left" valign="top" bgcolor="#f4f4f0"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td style="font-size:0px; line-height:0px;" width="20"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="20" height="15" border="0" /></td>
+                      <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="20" border="0" /></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td class="mobile-float" width="285" border="0" cellspacing="0" cellpadding="0" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                              <td width="30" align="center" valign="top" style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/TUI/_MASTER/Icons/TUI_Computer.png" width="30" height="30" style="display:block;" border="0" alt="" /></td>
+                                              <td style="font-size:0px; line-height:0px;" width="10"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="15" border="0" /></td>
+                                              <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tr>
+                                                    <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="7" border="0" /></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td align="left" valign="middle" style="font-family:'Tui', Calibri, Helvetica, Arial, sans-serif; color:#666666; font-size:14px; line-height:16px; mso-line-height-rule: exactly;"><a href="%%track {[return https://www.tui.co.uk?$tracking]} -group {terms}%%" style="color:#666666; text-decoration:none;">tui.co.uk</a></td>
+                                                  </tr>
+                                                </table></td>
+                                            </tr>
+                                          </table></td>
+                                      </tr>
+                                      <tr>
+                                        <td><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+                                      </tr>
+                                      <tr>
+                                        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                              <td width="30" align="center" valign="top" style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/TUI/_MASTER/Icons/TUI_Phone.png" width="30" height="30" style="display:block;" border="0" alt="" /></td>
+                                              <td align="left" valign="top" style="padding:0 0 0 10px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tr>
+                                                    <td align="left" valign="middle"  style="font-family:'Tui', Calibri, Helvetica, Arial, sans-serif; font-size:14px; line-height:21px; mso-line-height-rule:exactly; color:#666666;"><a href="tel:02034512688" style="color:#666666; text-decoration:none;"> 0203&nbsp;451&nbsp;2688<sup style="font-size:11px; line-height:12px;">&dagger;</sup> </a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td align="left" valign="middle"  style="font-family:'Tui', Calibri, Helvetica, Arial, sans-serif; font-size:12px; line-height:15px; mso-line-height-rule:exactly; color:#666666; text-decoration:none;">&dagger;(Calls from UK landlines cost the standard rate, but calls from mobiles may be higher. Check with your network provider.)</td>
+                                                  </tr>
+                                                </table></td>
+                                            </tr>
+                                          </table></td>
+                                      </tr>
+                                    </table></td>
+                                  <td class="mobile-float" style="font-size:0; line-height:0px;" width="10"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+                                  <td class="mobile-float" valign="top" width="285" border="0" cellspacing="0" cellpadding="0" align="left"><table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+                                      <tr>
+                                        <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                              <td width="30" align="center" valign="top" style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/TUI/_MASTER/Icons/TUI_Pin.png" width="30" height="30" style="display:block;" border="0" alt="" /></td>
+                                              <td  style="font-size:0; line-height:0px;" width="10"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="15" /></td>
+                                              <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tr>
+                                                    <td align="left" valign="middle" style="font-family:'Tui', Calibri, Helvetica, Arial, sans-serif; color:#666666; font-size:15px; padding:0 0px 0px 0; line-height:21px; mso-line-height-rule: exactly; padding:0 0 0px 0px;">Want to speak to a Holiday Advisor?</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td align="left" valign="top" style="font-family:'Tui', Calibri, Helvetica, Arial, sans-serif; color:#666666; font-size:12px; padding:0; line-height:16px; mso-line-height-rule: exactly; padding:0px 0 10px 0px;"> Find your nearest <a href="%%track {[return http://www.tui.co.uk/destinations/shop-finder?$tracking]} -group {shopfinder}%%" style="color:#092a5e; text-decoration:underline;">TUI Holiday Store</a></td>
+                                                  </tr>
+                                                </table></td>
+                                            </tr>
+                                          </table></td>
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="20" border="0" /></td>
+                          </tr>
+                        </table></td>
+                      <td style="font-size:0px; line-height:0px;" width="20"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="20" height="15" border="0" /></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td bgcolor="#70cbf4" style="font-size:0; line-height:0px; padding: 10px 5px 10px 20px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH1706_TUI/TUI.png" alt="" border="0" style="display:block" width="50" height="22" /></td>
+              </tr>
+              <!--END FOOTER--> 
+              
+              <!-- FCO//-->
+              
+              <tr>
+                <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="20" /></td>
+              </tr>
+              <tr>
+                <td><!-- FCO-Banner// -->
+                  
+                  <table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                      <td bgcolor="#dcdcdc"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td class="mobile-float" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td width="80" align="left" valign="top" class="mobile-float"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/FCO1609/ta_db.png" style="display:block"  width="80"  border="0" height="71" class="" /></td>
+                                  <td style="font-size:0; line-height:0px;" class="mobile-float"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="20" height="10" /></td>
+                                  <td class="mobile-float" valign="bottom"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td align="left" valign="bottom" style="font-family:'Tui', Calibri,  Helvetica, Arial, sans-serif; font-size:16px; line-height:18px; mso-line-height-rule: exactly; color:#092a5e;">TRAVEL AWARE - <strong>STAYING SAFE AND HEALTHY ABROAD.</strong></td>
+                                      </tr>
+                                      <tr>
+                                        <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+                                      </tr>
+                                      <tr>
+                                        <td style="font-family:'Tui', Calibri,  Helvetica, Arial, sans-serif; font-size:13px; line-height:16px; mso-line-height-rule: exactly; color:#092a5e;">The Foreign &amp; Commonwealth Office and the National Travel Health Network and Centre have up-to-date advice on staying safe and healthy abroad.
+                                          
+                                          For the latest travel advice from the Foreign &amp; Commonwealth Office including security and local laws, plus passport and visa information check <a href="%%track {[return http://www.gov.uk/travelaware?$tracking]} -group {FCO}%%" style="text-decoration:underline; font-weight:bold; color:#092a5e;">www.gov.uk/travelaware</a> and follow <a href="%%track {[return https://twitter.com/FCOtravel?$tracking]} -group {FCO}%%" style="text-decoration:underline; font-weight:bold; color:#092a5e;"> @FCOtravel </a>and <a href="%%track {[return https://facebook.com/FCOtravel?$tracking]} -group {FCO}%%" style="text-decoration:underline; font-weight:bold; color:#092a5e;">Facebook.com/FCOtravel</a>. <br />
+                                          <br />
+                                          More information is available by checking <a href="%%track {[return http://www.tui.co.uk/destinations/info/travel-aware?$tracking]} -group {FCO}%%" style="text-decoration:underline; font-weight:bold; color:#092a5e;">www.tui.co.uk/destinations/info/travel-aware</a>. Keep informed of current travel health news by visiting <a href="%%track {[return http://www.travelhealthpro.org.uk?$tracking]} -group {FCO}%%" style="text-decoration:underline; font-weight:bold; color:#092a5e;">www.travelhealthpro.org.uk</a>.<br />
+                                          <br />
+                                          The advice can change so check regularly for updates.</td>
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table>
+                  
+                  <!--//FCO--></td>
+              </tr>
+              <tr>
+                <td><table class="fluid100" width="620" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td style="padding:20px; font-family:'Tui', Calibri,  Helvetica, Arial, sans-serif; font-size:10px; line-height:14px; mso-line-height-rule: exactly; color:#000000;"><strong>Terms and Conditions</strong><br/>
+                        <br/>
+                        *All prices quoted are correct as of 21st June 2018 at 6am. All prices quoted include accommodation, flights, in resort transfers, taxes and estimated fuel charges and are based on the departure date, airports, board basis and number of persons sharing specified only. All offers apply to new bookings only unless otherwise stated. We reserve the right to withdraw these offers at any time without notice. Additional supplements and charges may apply. Full booking terms and conditions apply, please <a href="%%track {[return http://www.tui.co.uk/editorial/legal/website-terms-and-conditions.html?$tracking]} -group {terms}%%">click here</a> for full details or see the relevant brochure.<br />
+                        <br />
+                        <strong>Holidays</strong> <br />
+                        <strong>Cape Verde  from &pound;711:</strong> departs Bristol on 4th July 2018 to Sal, Cape Verde for 7 nights based on 2 adults sharing at the Riu Palace Cabo Verde on an AI basis.<br />
+                        <strong>Canaries from &pound;295:</strong> departs London Gatwick on 4th July 2018 to Costa Caleta, Fuerteventura, Canary Islands, Spain for 7 nights based on 2 adults sharing at the Caybeach Caleta on a SC basis.<br />
+                        <strong>Turkey from &pound;370:</strong> departs London Luton on 1st October 2018 to Marmaris, Dalaman Area, Turkey for 7 nights based on 2 adults sharing at the Club Aida Apartments on a SC basis.<br />
+                        <strong>Cyprus from &pound;465:</strong> departs London Stansted on 30th September 2018 to Ayia Napa, Larnaca Region, Cyprus for 7 nights based on 2 adults sharing at the Napa Prince on a SC basis.<br /> 
+                        <br /> 
+                        <strong>Morocco from &pound;513:</strong> departs London Gatwick on 9th July 2018 to Marrakech, Morocco for 7 nights based on 2 adults sharing at the Aqua Mirage Club on an AI basis.<br /> 
+                        <br />Use code MB60 to save &pound;60 on August 2018 holidays departing from Manchester and Birmingham - Save &pound;60 per booking on summer holidays departing throughout August 2018 from Manchester and Birmingham airports with code MB60 - Save an extra &pound;60 per booking including children aged 2 and over on TUI package holidays. Discount is valid on TUI package holidays only departing between 1st August 2018 and 31st August 2018. The minimum spend is &pound;900 per booking and before any extras such as insurance, room upgrades &amp; selecting seats, are added. Saving is based on a minimum of 2 adults sharing a room. The offer is valid from 14th June 2018 on tui.co.uk, https://www.tui.co.uk/holidays/multi-centre and in TUI stores. The offer is not valid on bookings made through any Call Centre. The offer does not apply to group bookings of more than 9 people, accommodation only, flight only, packages booked with a third party, cruise and ski bookings. This offer is only valid for new bookings and can only be redeemed once. Enter the code MB60 in upper case when on the holiday payment page of our website, the code will be applied in store. Please see https://www.tui.co.uk or the relevant brochure for booking terms and conditions apply. The offer is subject to availability and may change or be amended or withdrawn at any time without notice. This promotional code is non-transferable and not valid in conjunction with any other discount code.
+
+
+                        <br /> <br />
+                        Calls from UK landlines cost the standard rate, but calls from mobiles  may be higher. Check with your network provider. Calls may be recorded for  quality monitoring and training purposes. Our call centre is open 9am - 7pm  weekdays, 9am - 6pm on Saturdays and 10am - 5pm on Sundays and Bank Holidays.  There are no additional charges when paying by Debit or Credit Card, including  TUI Credit Card.<br/>
+                        <br />
+                        Many of the flights and flight-inclusive holidays are financially protected by the ATOL scheme. But ATOL protection does not apply to all holiday and travel services listed. Please ask us to confirm what protection may apply to your booking. If you do not receive an ATOL Certificate then the booking will not be ATOL protected. If you do receive an ATOL Certificate but all the parts of your trip are not listed on it, those parts will not be ATOL protected. Please see our booking conditions for information, or for more information about financial protection and the ATOL Certificate go to: <a href="%%track {[return http://www.atol.org.uk/ATOLCertificate?$tracking]} -group {terms}%%">www.atol.org.uk/ATOLCertificate</a>. TUI UK Limited ATOL 2524. ABTA V5126.
+                        <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="14" /></td>
+                          </tr>
+                          <tr>
+                            <td align="right"><table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td style="font-size:0; line-height:0px;" width="10"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="14" /></td>
+                                  <td  align="right"><img width="40" src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TUI/Master/atol.png" height="40" style="display:block" border="0" /></td>
+                                  <td style="font-size:0; line-height:0px;" width="10"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="14" /></td>
+                                  <td  align="right"><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/TUI/Master/abta.gif" style="display:block"  width="104" height="40" border="0" /></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="14" /></td>
+                          </tr>
+                        </table>
+                        We are unable to respond to replies to this email, please contact us <a href="%%track {[return http://www.tui.co.uk/destinations/contact-us?$tracking]} -group {terms}%%" target="_blank">here</a>.<br />
+                        <br />
+                        Should you have an issue, see the European Commission Online Dispute (ODR) Resolution platform <a href="http://ec.europa.eu/consumers/odr">here</a> for more information. <br/>
+                        <br/>
+                        We will hold your details in accordance with our Privacy Policy and may contact you by email with information on the products/services offered by TUI. To unsubscribe from receiving emails from TUI please <a href="file:///Mac_HD/Users/GemmaHicks/Downloads/%%live_unsubTuiUrl%%" target="_blank">click here</a>. <br />
+                        <br />
+                        TUI is a trading name of TUI UK Limited, a member of TUI Group. Registered Office: Wigmore House, Wigmore Lane, Luton, LU2 9TN. Registered in England No: 2830117. </td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table>
+            
+            <!-- //*Footer* --></td>
+        </tr>
+      </table>
+      
+      <!--//Container--></td>
+  </tr>
+</table>
+</body>
+</html>
