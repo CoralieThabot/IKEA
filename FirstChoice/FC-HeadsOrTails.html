@@ -1,0 +1,2207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml">
+<!-- START FIRST CHOICE ADHOC TCL HEADER BLOCK --> 
+%%!
+init;
+errormode notify TUI_Weekly_Failures_Alerts@creator.co.uk;
+set subsets_sourcetable [merge subsets_.clausefrom_];
+set outmailid [merge outmail.messageid];
+source scripts_marketing/weekly/firstchoice/AdHoc/initCache_FirstChoice_AdHoc.tcl;
+set ecamp "w";
+return;
+%%
+
+%%
+set cmid [merge memberid];
+LoadUserFromCache $cmid;
+set tracking "cmid=$cmid&ecamp=$ecamp&ito=ecrm$ecrmCode$outmailid";
+return;
+%%
+
+<!-- END FIRST CHOICE ADHOC TCL HEADER BLOCK -->
+<head>
+<meta http-equiv="Content-Type" content="text/html;; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<title>First Choice - The home of All Inclusive</title>
+<style type="text/css">
+/* General styles and reset */
+body {
+width: 100% !important;
+cursor: pointer;
+}
+.ReadMsgBody {
+width: 100%;
+}
+body {
+-webkit-text-size-adjust: none;
+-ms-text-size-adjust: none;
+-webkit-font-smoothing: antialiased;
+}
+/* Prevent Webkit and Windows Mobile platforms changing default font sizes + webkit font weight correction. */
+body {
+margin: 0;
+padding: 0;
+min-height: 1000px;
+}
+img {
+line-height: 100%;
+outline: none;
+text-decoration: none;
+display: block;
+}
+/* Prevent spacing issues in outlook */
+table, table td {
+border-collapse: collapse !important;
+}
+.float-right {
+float: right;
+display: inline-block;
+}
+.float-left {
+float: left;
+display: inline-block;
+}
+#yahoo-resize[yahoofix] {
+width: 620px;
+}
+
+/*** Media queries begin here ***/
+
+@media screen {
+.invisible {
+max-height: 0px !important;
+font-size: 0 !important;
+display: none !important;
+line-height: 0px;
+!important;
+padding: 0 !important;
+mso-hide: all !important;
+}
+/** FONT BEGIN **/
+@font-face {
+font-family: 'Gotham Rounded Book';
+src: url('http://cslb.creatormail.co.uk/sites/tui/hermes/fonts/gothamrounded/gothamrounded-bk.eot?') format('eot'), url('http://cslb.creatormail.co.uk/sites/tui/hermes/fonts/gothamrounded/gothamrounded-bk.woff') format('woff'), url('http://cslb.creatormail.co.uk/sites/tui/hermes/fonts/gothamrounded/gothamrounded-bk.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Gotham Rounded Medium';
+src: url('http://cslb.creatormail.co.uk/sites/tui/hermes/fonts/gothamrounded/gothamrounded-md.eot?') format('eot'), url('http://cslb.creatormail.co.uk/sites/tui/hermes/fonts/gothamrounded/gothamrounded-md.woff') format('woff'), url('http://cslb.creatormail.co.uk/sites/tui/hermes/fonts/gothamrounded/gothamrounded-md.ttf') format('truetype');
+font-weight: bold;
+font-style: normal;
+}
+}
+/* FONT END */
+
+/*** Opacity Desktop ***/
+.OpacityBlockWhite {
+background: rgb(255, 255, 255); /* Fallback */
+background: rgba(255, 255, 255, 0.8); /*Edit last digit only */
+}
+.OpacityBlockPink {
+background: rgb(229, 9, 110); /* Fallback */
+background: rgba(229, 9, 110, 0.8);
+}
+.OpacityBlockBlack {
+background: rgb(0, 0, 0); /* Fallback */
+background: rgba(0, 0, 0, 0.35); /*Edit last digit only */
+}
+.OpacityBlockGrey {
+background: rgb(117, 121, 118); /* Fallback */
+background: rgba(117, 121, 118, 0.9); /*Edit last digit only */
+}
+.OpacityBlockOrange {
+background: rgb(235, 139, 45); /* Fallback */
+background: rgba(235, 139, 45, 0.9); /*Edit last digit only */
+}
+.OpacityBlockPurple {
+background: rgb(156, 25, 129); /* Fallback */
+background: rgba(156, 25, 129, 0.9); /*Edit last digit only */
+}
+
+/***-MOBILE VIEW-***/
+@media only screen and (max-width: 480px) {
+.invisible {
+max-height: none !important;
+font-size: 12px !important;
+display: block !important;
+height: 17px !important;
+width: 115px !important;
+overflow : visible !important;
+}
+/* Header & Navigation */
+*[class*="header-spacer"] {
+height: 68px !important;
+}
+/***Resizing - Do not edit***/
+
+/*Pixels*/
+*[class*="device-width"] {
+width: 320px !important;
+}
+/*Percentages*/
+*[class*="fluid100"] {
+height: auto !important;
+width: 100% !important;
+}
+*[class*="fluid95"] {
+height: auto !important;
+width: 95% !important;
+}
+*[class*="fluid90"] {
+height: auto !important;
+width: 90% !important;
+}
+*[class*="fluid80"] {
+height: auto !important;
+width: 80% !important;
+}
+*[class*="fluid70"] {
+height: auto !important;
+width: 70% !important;
+}
+*[class*="fluid60"] {
+height: auto !important;
+width: 60% !important;
+}
+*[class*="fluid50"] {
+height: auto !important;
+width: 50% !important;
+}
+/*** Text Adjustments ***/
+.fontsizeH1[class="fontsizeH1"] {
+font-size: 32px !important;
+line-height: 130% !important;
+}
+.fontsizeH2[class="fontsizeH2"] {
+font-size: 28px !important;
+line-height: 130% !important;
+}
+.fontsizeH3[class="fontsizeH3"] {
+font-size: 24px !important;
+line-height: 130% !important;
+}
+.fontsizeH4[class="fontsizeH4"] {
+font-size: 20px !important;
+line-height: 130% !important;
+}
+.fontsize18[class="fontsize18"] {
+font-size: 18px !important;
+line-height: 130% !important;
+}
+.fontsize16[class="fontsize16"] {
+font-size: 16px !important;
+line-height: 130% !important;
+}
+.fontsize14[class="fontsize14"] {
+font-size: 14px !important;
+line-height: 130% !important;
+}
+.fontsize12[class="fontsize12"] {
+font-size: 12px !important;
+line-height: 130% !important;
+}
+.fontsize10[class="fontsize10"] {
+font-size: 10px !important;
+line-height: 130% !important;
+}
+/*** Opacity Mobile ***/
+[class=OpacityBlockWhite] {
+background: rgb(255, 255, 255); /* Fallback */
+background: rgba(255, 255, 255, 0.9); /*Edit last digit only */
+}
+[class=OpacityBlockBlue] {
+background: rgb(148, 216, 247); /* Fallback */
+background: rgba(112, 203, 244, 0.9); /*Edit last digit only */
+}
+[class=OpacityBlockDark] {
+background: rgb(9, 42, 94); /* Fallback */
+background: rgba(9, 42, 94, 0.7); /*Edit last digit only */
+}
+[class=OpacityBlockBlack] {
+background: rgb(0, 0, 0); /* Fallback */
+background: rgba(0, 0, 0, 0.35); /*Edit last digit only */
+}
+/*** Stacking ***/
+*[class].puttop {
+display: table-header-group!important;
+}
+*[class].putbottom {
+display: table-footer-group!important;
+}
+[class~="mobile-float"] {
+display: block !important;
+width: 100% !important;
+}
+*[class*="mobile-hide"], *[class*="mobile-hide"] * {
+display: none!important;
+max-height: 0!important;
+max-width: 0!important;
+height: 0!important;
+width: 0px !important;
+padding: 0!important;
+margin: 0!important;
+visibility: hidden!important;
+line-height: 0px !important;
+font-size: 0px !important;
+background: none!important;
+}
+/*** Backgrounds - Editable Content***/
+[class~="SB2-bg-swap"] {
+background: url(http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180313/half-mob.jpg) !important;
+background-color: #e5096e !important;
+background-repeat: no-repeat !important;
+background-position: 0px 100px !important;
+background-position: top !important;
+}
+*[class*="SB2_bg"] {
+height: auto !important;
+background-repeat: no-repeat !important;
+background-size: 100% auto !important;
+}
+.SB2-padding {
+width: 240px !important;
+height: auto !important;
+padding-top: 180px !important;
+padding-bottom: 0px !important;
+border: 1px solide black !important;
+}
+/* 1x10 offer table classes */
+.widthOfferrow[class="widthOfferrow"] {
+width: 97% !important;
+}
+[class=offerrow-ht] {
+height: 70px !important;
+}
+[class=offercell-ht] {
+height: 45px !important;
+width: 55px !important;
+font-size: 16px !important;
+}
+.quarterwidth[class="quarterwidth"] {
+width: 25% !important;
+}
+[class=mobile-float-ht] {
+display: block !important;
+padding-bottom: 10px !important;
+width: 100% !important;
+}
+[class~="padding-top-10"] {
+padding-top: 10px !important;
+}
+[class~="padding-bottom-10"] {
+padding-bottom: 10px !important;
+}
+[class~="auto-80"] {
+width: 80% !important;
+height: auto !important;
+}
+/* offer table 2 classes */
+[class~="ot2-resize-151"] {
+width: 151px !important;
+}
+[class~="padding-bottom-6"] {
+padding-bottom: 6px !important;
+}
+.dotdTop[class="dotdTop"] {
+padding-top: 15px !important;
+}
+.dotdWidthA[class="dotdWidthA"] {
+width: 50% !important;
+}
+.dotdWidthB[class="dotdWidthB"] {
+width: 100% !important;
+}
+.dotdTitle[class="dotdTitle"] {
+height: 40px !important;
+font-size: 18px !important;
+}
+.dotdCopy[class="dotdCopy"] {
+height: 60px !important;
+font-size: 14px !important;
+}
+.dotdPriceH[class="dotdPriceH"] {
+height: 50px !important;
+}
+.dotdPriceW[class="dotdPriceW"] {
+width: 100% !important;
+}
+.dotdPriceSize[class="dotdPriceSize"] {
+font-size: 24px !important;
+}
+/* end offer table classes */
+
+[class=iconcell-ht] {
+height: 45px !important;
+width: 60px !important;
+}
+/*****START TEMPLATE SPECIFIC*****/
+
+[class~="mobile-grow"] {
+height: 120px !important;
+width: 20px !important;
+}
+[class~="sub-spacer"] {
+height: 200px !important;
+width: 100% !important;
+}
+[class~="mb-bg-shift"] {
+background-repeat: no-repeat !important;
+background-position: left 75px !important;
+background-size: 190% !important;
+}
+	
+.hero-padding-mob {
+width:290px !important;
+height:auto !important;
+padding:0 !important;
+}
+.height125 {height: 125px !important;}
+.height40 {height: 40px !important;}
+.height30 {height: 30px !important;}
+.height20 {height: 20px !important;}
+	
+td[class="tbanner"] .tb_image {
+display: none;
+}
+td[class="tbanner"] .tb_image_small {
+display: table-cell !important;
+width: 100% !important;
+height: auto !important;
+max-height: inherit !important;
+overflow: visible !important;
+float: none !important;
+padding: 0px !important;
+}
+td[class="tbanner"] .tb_image_small img {
+width: 100%;
+display: block !important;
+	}
+/**END TEMPLATE SPECIFIC**/
+
+}
+</style>
+<!--[if mso]>
+<style> body,table tr,table td,a, span,table.MsoNormalTable {  font-family:Arial, Helvetica, sans-serif !important;  }</style>
+<!--<![endif]-->
+</head>
+
+<body bgcolor="#f9f9f9" class="fluid100">
+
+<!--Wrapper//-->
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" class="device-width">
+<!-- Preheader// -->
+<tr>
+<td valign="top" style="font-family:Arial, Helvetica, sans-serif; color:#ffffff; font-size:1px;">The choice is yours, with deals from &pound;xxx</td>
+</tr>
+<!-- //Preheader-->
+<tr>
+<td style="padding:10px 0;" align="center">
+<!--PreText//--> 
+<table class="device-width" id="yahoo-resize" width="750" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:13px; color:#6c6c6c; padding-bottom:10px; background-color:transparent;" align="center">Email not looking right?&nbsp; <a href="%%track {[return http://email.thomson.co.uk/preview/fconline.tml]} -group {RSS}%%" style="color:#6c6c6c; text-decoration:underline;">Click here</a> to view it in your browser</td>
+</tr>
+</tbody>
+</table>
+<!--//PreText--> 
+
+<!--FCO//-->
+<table width="750" cellspacing="0" id="table19" border="0" class="device-width" cellpadding="0">
+<tr>
+<td align="center" valign="top"><table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+<tr>
+ <td style="padding:8px; font-family:'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size:16px; line-height:18px; mso-line-height-rule: exactly;text-transform:uppercase; background-color:#dcdcdc;" align="center"><a style="text-decoration:none; color:#000000" href="%%track {[return http://www.firstchoice.co.uk/holiday/info/know-before-you-go?$tracking]}  -group {FCO}%%" title="Know before you go - stay safe & healthy abroad">Know before you go - stay safe & healthy&nbsp;abroad</a></td>
+</tr>
+</table>
+<table class="fluid100" align="center" width="650" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<!--//FCO-->  
+
+<!--CONTENT//-->
+<table bgcolor="#ffffff" class="device-width" width="750" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center" valign="top">
+<!--Main Intro//-->
+<table class="fluid100" align="center" width="750" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td background="http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180601/mb.jpg right/cover" style="background-image: url(http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180601/mb.jpg); background-size: 100%; background-size: cover; background-repeat:no-repeat;" class="mb-bg-shift" align="center" bgcolor="#f0f0f0" valign="top">
+<!--[if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:750px;height:500px;">
+<v:fill type="tile" src="http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180601/mb.jpg" color="#ffffff" />
+<v:textbox inset="0,0,0,0">
+<![endif]-->
+
+<table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td bgcolor="#ffffff" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td align="left" valign="top"><a href="%%track {[return http://www.firstchoice.co.uk/?$tracking]} -group {header}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/FC/Master/header-logo-fc-x2.png" width="192" height="62" border="0" alt="First Choice"/></a></td>
+    </tr>
+  </tbody>
+</table></td>
+</tr>
+<tr>
+<td style="padding-top:0px;"><table width="100%" cellspacing="0" border="0" class="fluid100" cellpadding="0">
+
+<!-- ********** Dark blue NAV ********** -->
+
+<tr>
+<td bgcolor="#e5096e" valign="top" height="40" align="center"><table width="98%" cellspacing="0" border="0" cellpadding="0">
+<tr>
+<td style="height:8px; font-size:0; line-height:0;" height="8px"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="8" height="8" /></td>
+</tr>
+<tr>
+<td><table width="100%" cellspacing="0" height="24" border="0" cellpadding="0">
+<tr>
+<td style="font-family: Helvetica, Arial, sans-serif; font-size:11px; line-height:12px; mso-line-height-rule: exactly; color:#ffffff; text-transform:uppercase; padding-left:10px;" valign="middle" align="center"><a href="%%track {[return http://www.firstchoice.co.uk/holidays/last-minute?$tracking]} -group {NAV1}%%" style="color:#ffffff; text-decoration:none;">LATE DEALS</a></td>
+
+<td style="font-family: Helvetica, Arial, sans-serif; font-size:11px; line-height:12px; mso-line-height-rule: exactly; color:#ffffff; text-transform:uppercase; padding-left:10px; padding-right:10px;" valign="middle" align="center"><a style="color:#ffffff; text-decoration:none" href="%%track {[return http://www.firstchoice.co.uk/holidays/all-inclusive?$tracking]} -group {Nav2}%%">ALL INCLUSIVE</a></td>
+
+<td style="font-family: Helvetica, Arial, sans-serif; font-size:11px; line-height:12px; mso-line-height-rule: exactly; color:#ffffff; text-transform:uppercase; padding-left:10px; padding-right:10px;" valign="middle" align="center"><a style="color:#ffffff; text-decoration:none" href="%%track {[return http://www.firstchoice.co.uk/myapp/?$tracking]} -group {nav3}%%">FIRSTCHOICE APP</a></td>
+
+<td class="mobile-hide" style="font-family: Helvetica, Arial, sans-serif; font-size:11px; line-height:12px; mso-line-height-rule: exactly; color:#ffffff; text-transform:uppercase; padding-left:10px; padding-right:10px;" valign="middle" align="center"><a style="color:#ffffff; text-decoration:none" href="%%track {[return http://www.firstchoice.co.uk/holidays/luxury?$tracking]} -group {nav4}%%">LUXURY</a></td>
+
+<td class="mobile-hide" style="font-family: Helvetica, Arial, sans-serif; font-size:11px; line-height:12px; mso-line-height-rule: exactly; color:#ffffff; text-transform:uppercase; padding-left:10px; padding-right:10px;" valign="middle" align="center"><a style="color:#ffffff; text-decoration:none" href="%%track {[return http://www.firstchoice.co.uk/holidays/family?$tracking]} -group {nav5}%%">FAMILY</a></td>
+
+<td class="mobile-hide" style="font-family: Helvetica, Arial, sans-serif; font-size:11px; line-height:12px; mso-line-height-rule: exactly; color:#ffffff; text-transform:uppercase; padding-left:10px; padding-right:10px;" valign="middle" align="center"><a style="color:#ffffff; text-decoration:none" href="%%track {[return http://www.firstchoice.co.uk/holidays/?$tracking]}  -group {nav6}%%">HOLIDAYS</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+
+<!-- ********** Dark blue NAV ********** -->
+
+</table></td>
+</tr>
+<tr>
+<td style="font-size:0px; line-height:0px;"><img width="100%" src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" height="25" style="display:block" border="0" /></td>
+</tr>
+
+<!--Title//-->
+<tr>
+<td valign="top" align="center"><table width="100%" cellspacing="0" border="0" cellpadding="0">
+<tr>
+<td align="center"><table cellspacing="0" class="fluid100" border="0" cellpadding="0" align="center">
+<tr>
+<td valign="middle" class="tbanner">
+<table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+<!--DESKTOP//-->
+<tr class="fluid90">
+<td align="center"><a href="%%track {[return https://www.firstchoice.co.uk/holiday/deals?$tracking]} -group {MB}%%" style="text-decoration:none;"><img src="http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180601/mb-copy.gif" style="display:block; font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 36px; line-height: 36px; color:#e5096e; text-align:center;" width="450" height="" alt="Heads or Tails?" class="hero-padding-mob" border="0" /></a></td>
+</tr>
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="100%" height="20" class="height30" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<!--//Title-->
+
+<!--COPY SECTION//-->
+<tr>
+<td align="center" valign="top">
+<table width="420" border="0" cellpadding="0" cellspacing="0" class="fluid90">
+<tr>
+<td width="100%" align="center" valign="middle" style="color:#e5096e; font-size:16px;line-height:21px; font-family:'Gotham Rounded Book',Helvetica,Arial,sans-serif;"><a href="%%track {[return https://www.firstchoice.co.uk/holiday/deals?$tracking]}  -group {MB}%%" style="color:#e5096e; text-decoration:none">Apparently it's 'flip a coin day'. So grab a penny, chuck it in the air, and see when you should fly away.<br>Heads = summer, tails = winter.</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+<!--//COPY SECTION--> 
+
+<tr>
+<td style="font-size:0px; line-height:0px;"><img width="100%" src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" height="50" style="display:block" class="height40" border="0" /></td>
+</tr>
+<tr valign="middle">
+<td align="center">
+<table bgcolor="#e5096e" cellspacing="0" border="0" cellpadding="0" align="center" class="fluid70">
+<tr valign="middle" align="center">
+<td width="30" style="font-size:0px; line-height:0px;"><a href="%%track {[return https://www.firstchoice.co.uk/holiday/deals?$tracking]}  -group {MBcta}%%"><img width="30" src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" height="44" style="display:block" border="0" /></a></td>
+<td style="color: #ffffff; font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 14px; text-transform:uppercase;"><a style="font-size:14px;line-height:14px; color:#ffffff; text-decoration:none;" href="%%track {[return https://www.firstchoice.co.uk/holiday/deals?$tracking]} -group {mbcta}%%">Find a deal</a></td>
+<td width="30" style="font-size:0px; line-height:0px;"><a href="%%track {[return https://www.firstchoice.co.uk/holiday/deals?$tracking]}  -group {MBcta}%%"><img width="30" src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" height="44" style="display:block" border="0" /></a></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td style="font-size:0px; line-height:0px;"><img width="100%" src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" height="170" class="height125" style="display:block" border="0" /></td>
+</tr>
+</table>
+<!--[if gte mso 9]>
+</v:textbox>
+</v:rect>
+<![endif]--></td>
+</tr>
+</table>
+<!--//Main Intro-->
+
+<!-- Spacer// -->
+<table width="620" border="0" align="center" cellpadding="0" cellspacing="0" class="fluid100" >
+<tr>
+<td style="font-size:0px; line-height:0px;" valign="top"><img width="10" src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH140207/spacer.gif" style="display:block" height="20" border="0" /></td>
+</tr>
+</table>
+<!-- //Spacer -->
+
+<table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<table width="620" border="0" align="center" cellpadding="0" cellspacing="0" class="fluid95">
+<tr>
+<td class="fontsizeB" align="center" style="font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif;font-size: 24px; line-height: 24px;">
+<a href="%%track {[return https://www.firstchoice.co.uk/holiday/deals?$tracking]}  -group {offerstitle}%%" style="text-decoration:none; color:#666666; align: center" title="Where did your coin land?">Where did your coin land?</a>
+</td>
+</tr>
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="16" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="center">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="fluid100">
+<tr>
+<td bgcolor="#e5096e">
+<table width="100%" border="0" cellspacing="0" cellpadding="5">
+<tr>
+<td align="center" valign="middle" style="font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 18px; padding-top: 10px; padding-bottom: 10px;">
+<a style="color:#ffffff; text-decoration:none" href="%%track {[return https://www.firstchoice.co.uk/holiday/deals/winter-sun-holidays?$tracking]} -group {Offerheader1}%%" title="Summer sizzlers"><strong>Summer sizzlers</strong></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="center" >
+<table border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="18" align="center" style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/fc/FC170602/pink-arrow.png" style="display:block" width="18" height="9" border="0" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="15" height="5" border="0" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<!--LEFT//-->
+<td class="mobile-float" width="305" valign="top">
+<table class="fluid100" bgcolor="#FFFFFF" width="305" border="0" cellspacing="0" cellpadding="0"  align="right">
+<tr>
+<td background="http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180601/sb1.jpg" style="background-position:left; background-size:cover;" bgcolor="#f5f5f5" width="305" height="160" valign="top">
+<!--[if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:305px;height:200px;">
+<v:fill type="frame" src="http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180601/sb1.jpg" color="#f5f5f5" />
+<v:textbox inset="0,0,0,0">
+<div>
+<![endif]-->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<a href="%%track {[return offer1replace&$tracking]} -group {offer1}%%">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt=""  width="100%" height="110" border="0" style="display:block" />
+</a>
+</td>
+</tr>
+<tr>
+<td valign="middle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="100%" valign="middle" bgcolor="#ffffff" class="OpacityBlockWhite mobile-float margin-bottom-10">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+<tr>
+<td height="25">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size:0px; line-height:0px;" width="12">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="12" height="25" border="0" alt="" />
+</td>
+<td valign="bottom">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr align="center" valign="middle">
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="20" valign="top" align="left" style="font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 15px;">
+<a href="%%track {[return offer1replace&$tracking]} -group {offer1}%%" style="text-decoration: none; color:#333333;"><strong>Costa Rica</strong></a>
+</td>
+</tr>
+<tr>
+<td style="color: #666666; font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 12px; line-height: 12px;">from</td>
+</tr>
+<tr>
+<td style="font-family: 'Gotham Rounded Medium',Helvetica,Arial,sans-serif; font-size: 20px; line-height: 20px;">
+<a href="%%track {[return offer1replace&$tracking]} -group {offer1}%%" style="text-decoration: none; color:#e5096e;">&pound;xxx*</a>
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;" width="5">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="4" height="10" border="0" alt="" />
+</td>
+<td width="15">
+<a href="%%track {[return offer1replace&$tracking]} -group {offer1}%%" title="Find out more">
+<img src="http://cslb.creatormail.co.uk/sites/tui/fc/FC16_Master/CTA/pink.png" style="display:block" width="12"  border="0" alt="" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;" width="10">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;">
+<a href="%%track {[return offer1replace&$tracking]} -group {offer1}%%">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" width="94" height="50" border="0" style="display:block" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-size:10px; line-height:10px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" alt="" />		
+</td>
+</tr>
+</table>
+<!--[if gte mso 9]>
+</div>
+</v:textbox>
+</v:rect>
+<![endif]-->
+</td>
+</tr>
+</table>
+</td>
+<!--//LEFT-->
+<td class="mobile-float" >
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" />
+</td>
+<!--RIGHT//-->
+<td class="mobile-float" width="305" valign="top">
+<table class="fluid100" bgcolor="#FFFFFF" width="305" border="0" cellspacing="0" cellpadding="0"  align="right">
+<tr>
+<td background="http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180601/sb2.jpg" style="background-position:left; background-size:cover;" bgcolor="#f5f5f5" width="305" height="160" valign="top">
+<!--[if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:305px;height:200px;">
+<v:fill type="frame" src="http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180601/sb2.jpg" color="#f5f5f5" />
+<v:textbox inset="0,0,0,0">
+<div>
+<![endif]-->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<a href="%%track {[return offer2replace&$tracking]} -group {offer2}%%">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt=""  width="100%" height="110" border="0" style="display:block" />
+</a>
+</td>
+</tr>
+<tr>
+<td valign="middle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="100%" valign="middle" bgcolor="#ffffff" class="OpacityBlockWhite mobile-float margin-bottom-10">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+<tr>
+<td height="25">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size:0px; line-height:0px;" width="12">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="12" height="25" border="0" alt="" />
+</td>
+<td valign="bottom">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr align="center" valign="middle">
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="20" valign="top" align="left" style="font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 15px;">
+<a href="%%track {[return offer2replace&$tracking]} -group {offer2}%%" style="text-decoration: none; color:#333333;"><strong>Balearics</strong></a>
+</td>
+</tr>
+<tr>
+<td style="color: #666666; font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 12px; line-height: 12px;">from</td>
+</tr>
+<tr>
+<td style="font-family: 'Gotham Rounded Medium',Helvetica,Arial,sans-serif; font-size: 20px; line-height: 20px;">
+<a href="%%track {[return offer2replace&$tracking]} -group {offer2}%%" style="text-decoration: none; color:#e5096e;">&pound;xxx*</a>
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;" width="5">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="4" height="10" border="0" alt="" />
+</td>
+<td width="15">
+<a href="%%track {[return offer2replace&$tracking]} -group {offer2}%%" title="Find out more">
+<img src="http://cslb.creatormail.co.uk/sites/tui/fc/FC16_Master/CTA/pink.png" style="display:block"  width="12"  border="0" alt="" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;" width="10">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;">
+<a href="%%track {[return offer2replace&$tracking]} -group {offer2}%%">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" width="94" height="50" border="0"  style="display:block" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-size:10px; line-height:10px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+</table>
+<!--[if gte mso 9]>
+</div>
+</v:textbox>
+</v:rect>
+<![endif]-->
+</td>
+</tr>
+</table>
+</td>
+<!--//RIGHT--> 
+</tr>
+</table>
+<table width="620" class="fluid100" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="15" height="10" border="0" />
+</td>
+</tr>
+</table>
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<!--LEFT//-->
+<td class="mobile-float" width="305" valign="top">
+<table class="fluid100" bgcolor="#FFFFFF" width="305" border="0" cellspacing="0" cellpadding="0"  align="right">
+<tr>
+<td background="http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180601/sb3.jpg" style="background-position:left; background-size:cover;" bgcolor="#f5f5f5" width="305" height="160" valign="top">
+<!--[if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:305px;height:200px;">
+<v:fill type="frame" src="http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180601/sb3.jpg" color="#f5f5f5" />
+<v:textbox inset="0,0,0,0">
+<div>
+<![endif]-->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<a href="%%track {[return offer3replace&$tracking]} -group {offer3}%%">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt=""  width="100%" height="110" border="0" style="display:block" />
+</a>
+</td>
+</tr>
+<tr>
+<td valign="middle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="100%" valign="middle" bgcolor="#ffffff" class="OpacityBlockWhite mobile-float margin-bottom-10">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+<tr>
+<td height="25">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size:0px; line-height:0px;" width="12">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="12" height="25" border="0" alt="" />
+</td>
+<td valign="bottom">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr align="center" valign="middle">
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="20" valign="top" align="left" style="font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 15px;">
+<a href="%%track {[return offer3replace&$tracking]} -group {offer3}%%" style="text-decoration: none; color:#333333;"><strong>Greece</strong></a>
+</td>
+</tr>
+<tr>
+<td style="color: #666666; font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 12px; line-height: 12px;">from</td>
+</tr>
+<tr>
+<td style="font-family: 'Gotham Rounded Medium',Helvetica,Arial,sans-serif; font-size: 20px; line-height: 20px;">
+<a href="%%track {[return offer3replace&$tracking]} -group {offer3}%%" style="text-decoration: none; color:#e5096e;">&pound;xxx*</a>
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;" width="5">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="4" height="10" border="0" alt="" />
+</td>
+<td width="15">
+<a href="%%track {[return offer3replace&$tracking]} -group {offer3}%%" title="Find out more">
+<img src="http://cslb.creatormail.co.uk/sites/tui/fc/FC16_Master/CTA/pink.png" style="display:block" width="12"  border="0" alt="" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;" width="10">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;">
+<a href="%%track {[return offer3replace&$tracking]} -group {offer3}%%">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" width="94" height="50" border="0" style="display:block" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-size:10px; line-height:10px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" alt="" />		
+</td>
+</tr>
+</table>
+<!--[if gte mso 9]>
+</div>
+</v:textbox>
+</v:rect>
+<![endif]-->
+</td>
+</tr>
+</table>
+</td>
+<!--//LEFT-->
+<td class="mobile-float" >
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" />
+</td>
+<!--RIGHT//-->
+<td class="mobile-float" width="305" valign="top">
+<table class="fluid100" bgcolor="#FFFFFF" width="305" border="0" cellspacing="0" cellpadding="0"  align="right">
+<tr>
+<td background="http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180601/sb4.jpg" style="background-position:left; background-size:cover;" bgcolor="#f5f5f5" width="305" height="160" valign="top">
+<!--[if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:305px;height:200px;">
+<v:fill type="frame" src="http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180601/sb4.jpg" color="#f5f5f5" />
+<v:textbox inset="0,0,0,0">
+<div>
+<![endif]-->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<a href="%%track {[return offer4replace&$tracking]} -group {offer4}%%">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt=""  width="100%" height="110" border="0" style="display:block" />
+</a>
+</td>
+</tr>
+<tr>
+<td valign="middle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="100%" valign="middle" bgcolor="#ffffff" class="OpacityBlockWhite mobile-float margin-bottom-10">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+<tr>
+<td height="25">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size:0px; line-height:0px;" width="12">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="12" height="25" border="0" alt="" />
+</td>
+<td valign="bottom">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr align="center" valign="middle">
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="20" valign="top" align="left" style="font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 15px;">
+<a href="%%track {[return offer4replace&$tracking]} -group {offer4}%%" style="text-decoration: none; color:#333333;"><strong>Mexico</strong></a>
+</td>
+</tr>
+<tr>
+<td style="color: #666666; font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 12px; line-height: 12px;">from</td>
+</tr>
+<tr>
+<td style="font-family: 'Gotham Rounded Medium',Helvetica,Arial,sans-serif; font-size: 20px; line-height: 20px;">
+<a href="%%track {[return offer4replace&$tracking]} -group {offer4}%%" style="text-decoration: none; color:#e5096e;">&pound;xxx*</a>
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;" width="5">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="4" height="10" border="0" alt="" />
+</td>
+<td width="15">
+<a href="%%track {[return offer4replace&$tracking]} -group {offer4}%%" title="Find out more">
+<img src="http://cslb.creatormail.co.uk/sites/tui/fc/FC16_Master/CTA/pink.png" style="display:block"  width="12"  border="0" alt="" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;" width="10">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;">
+<a href="%%track {[return offer4replace&$tracking]} -group {offer4}%%">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" width="94" height="50" border="0"  style="display:block" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-size:10px; line-height:10px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+</table>
+<!--[if gte mso 9]>
+</div>
+</v:textbox>
+</v:rect>
+<![endif]-->
+</td>
+</tr>
+</table>
+</td>
+<!--//RIGHT--> 
+</tr>
+</table>
+
+<!-- Spacer//-->
+<table width="620" border="0" align="center" cellpadding="0" cellspacing="0" class="fluid100">
+<tr>
+<td style="font-size:0px; line-height:0px;" valign="top"><img width="1" src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH140207/spacer.gif" style="display:block" height="30" border="0" /></td>
+</tr>
+</table>
+<!--//Spacer-->
+
+<!--WHITE PROMO//-->
+<table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" style="border:2px solid #e5096e; background-color: #FFFFFF;">
+<tr valign="middle">
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="12" border="0" alt="" />
+</td>
+</tr>
+<tr valign="middle">
+<td>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr align="center" valign="middle">
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="12" border="0" alt="" />
+</td>
+<td style="font-family:'Gotham Rounded Book',Helvetica,Arial,sans-serif; color:#E5096E; font-size:18px;">
+<a href="%%track {[return https://www.firstchoice.co.uk/holiday/deals/summer-holidays?$tracking]}  -group {PROMO1}%%" style="color:#e5096e; text-decoration:none;" title="Plus, save &pound;50* per booking with code BEACH50">Plus, save &pound;50* per booking with code <strong>BEACH50</strong></a>
+</td>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="5" height="12" border="0" alt="" />
+</td>
+<td width="20">
+<a href="%%track {[return https://www.firstchoice.co.uk/holiday/deals/summer-holidays?$tracking]}  -group {PROMO1}%%" title="Find Out More">
+<img src="http://cslb.creatormail.co.uk/sites/tui/fc/FC170106/promoanimation.gif" alt="Find Out More"  width="20" height="20" border="0" style="display:block" />
+</a>
+</td>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="12" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="middle">
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="12" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--//WHITE PROMO-->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="fluid100">
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="15" height="30" border="0" />
+</td>
+</tr>
+<tr>
+<td bgcolor="#e5096e">
+<table width="100%" border="0" cellspacing="0" cellpadding="5">
+<tr>
+<td align="center" valign="middle" style="font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 18px; padding-top: 10px; padding-bottom: 10px;">
+<a style="color:#ffffff; text-decoration:none" href="%%track {[return https://www.firstchoice.co.uk/holiday/deals/summer-holidays?$tracking]} -group {Offerheader2}%%" title="Winter wanderers"><strong>Winter wanderers</strong></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="center" >
+<table border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="18" align="center" style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/fc/FC170602/pink-arrow.png" style="display:block" width="18" height="9" border="0" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="15" height="5" border="0" />
+</td>
+</tr>
+</table>
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<!--LEFT//-->
+<td class="mobile-float" width="305" valign="top">
+<table class="fluid100" bgcolor="#FFFFFF" width="305" border="0" cellspacing="0" cellpadding="0"  align="right">
+<tr>
+<td background="http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180601/sb5.jpg" style="background-position:left; background-size:cover;" bgcolor="#f5f5f5" width="305" height="160" valign="top">
+<!--[if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:305px;height:200px;">
+<v:fill type="frame" src="http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180601/sb5.jpg" color="#f5f5f5" />
+<v:textbox inset="0,0,0,0">
+<div>
+<![endif]-->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<a href="%%track {[return offer5replace&$tracking]} -group {offer5}%%">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt=""  width="100%" height="110" border="0" style="display:block" />
+</a>
+</td>
+</tr>
+<tr>
+<td valign="middle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="100%" valign="middle" bgcolor="#ffffff" class="OpacityBlockWhite mobile-float margin-bottom-10">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+<tr>
+<td height="25">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size:0px; line-height:0px;" width="12">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="12" height="25" border="0" alt="" />
+</td>
+<td valign="bottom">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr align="center" valign="middle">
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="20" valign="top" align="left" style="font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 15px;">
+<a href="%%track {[return offer5replace&$tracking]} -group {offer5}%%" style="text-decoration: none; color:#333333;"><strong>Canaries</strong></a>
+</td>
+</tr>
+<tr>
+<td style="color: #666666; font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 12px; line-height: 12px;">from</td>
+</tr>
+<tr>
+<td style="font-family: 'Gotham Rounded Medium',Helvetica,Arial,sans-serif; font-size: 20px; line-height: 20px;">
+<a href="%%track {[return offer5replace&$tracking]} -group {offer5}%%" style="text-decoration: none; color:#e5096e;">&pound;xxx*</a>
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;" width="5">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="4" height="10" border="0" alt="" />
+</td>
+<td width="15">
+<a href="%%track {[return offer5replace&$tracking]} -group {offer5}%%" title="Find out more">
+<img src="http://cslb.creatormail.co.uk/sites/tui/fc/FC16_Master/CTA/pink.png" style="display:block" width="12"  border="0" alt="" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;" width="10">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;">
+<a href="%%track {[return offer5replace&$tracking]} -group {offer5}%%">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" width="94" height="50" border="0" style="display:block" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-size:10px; line-height:10px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" alt="" />		
+</td>
+</tr>
+</table>
+<!--[if gte mso 9]>
+</div>
+</v:textbox>
+</v:rect>
+<![endif]-->
+</td>
+</tr>
+</table>
+</td>
+<!--//LEFT-->
+<td class="mobile-float" >
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" />
+</td>
+<!--RIGHT//-->
+<td class="mobile-float" width="305" valign="top">
+<table class="fluid100" bgcolor="#FFFFFF" width="305" border="0" cellspacing="0" cellpadding="0"  align="right">
+<tr>
+<td background="http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180601/sb6.jpg" style="background-position:left; background-size:cover;" bgcolor="#f5f5f5" width="305" height="160" valign="top">
+<!--[if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:305px;height:200px;">
+<v:fill type="frame" src="http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180601/sb6.jpg" color="#f5f5f5" />
+<v:textbox inset="0,0,0,0">
+<div>
+<![endif]-->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<a href="%%track {[return offer6replace&$tracking]} -group {offer6}%%">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt=""  width="100%" height="110" border="0" style="display:block" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="middle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="100%" valign="middle" bgcolor="#ffffff" class="OpacityBlockWhite mobile-float margin-bottom-10">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+<tr>
+<td height="25">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size:0px; line-height:0px;" width="12">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="12" height="25" border="0" alt="" />
+</td>
+<td valign="bottom">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr align="center" valign="middle">
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="20" valign="top" align="left" style="font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 15px;">
+<a href="%%track {[return offer6replace&$tracking]} -group {offer6}%%" style="text-decoration: none; color:#333333;"><strong>Jamaica</strong></a>
+</td>
+</tr>
+<tr>
+<td style="color: #666666; font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 12px; line-height: 12px;">from</td>
+</tr>
+<tr>
+<td style="font-family: 'Gotham Rounded Medium',Helvetica,Arial,sans-serif; font-size: 20px; line-height: 20px;">
+<a href="%%track {[return offer6replace&$tracking]} -group {offer6}%%" style="text-decoration: none; color:#e5096e;">&pound;xxx*</a>
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;" width="5">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="4" height="10" border="0" alt="" />
+</td>
+<td width="15">
+<a href="%%track {[return offer6replace&$tracking]} -group {offer6}%%" title="Find out more">
+<img src="http://cslb.creatormail.co.uk/sites/tui/fc/FC16_Master/CTA/pink.png" style="display:block"  width="12"  border="0" alt="" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;" width="10">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;">
+<a href="%%track {[return offer6replace&$tracking]} -group {offer6}%%">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" width="94" height="50" border="0"  style="display:block" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-size:10px; line-height:10px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+</table>
+<!--[if gte mso 9]>
+</div>
+</v:textbox>
+</v:rect>
+<![endif]-->
+</td>
+</tr>
+</table>
+</td>
+<!--//RIGHT--> 
+</tr>
+</table>
+<table width="620" class="fluid100" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="15" height="10" border="0" />
+</td>
+</tr>
+</table>
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<!--LEFT//-->
+<td class="mobile-float" width="305" valign="top">
+<table class="fluid100" bgcolor="#FFFFFF" width="305" border="0" cellspacing="0" cellpadding="0"  align="right">
+<tr>
+<td background="http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180601/sb7.jpg" style="background-position:left; background-size:cover;" bgcolor="#f5f5f5" width="305" height="160" valign="top">
+<!--[if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:305px;height:200px;">
+<v:fill type="frame" src="http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180601/sb7.jpg" color="#f5f5f5" />
+<v:textbox inset="0,0,0,0">
+<div>
+<![endif]-->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<a href="%%track {[return offer7replace&$tracking]} -group {offer7}%%">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt=""  width="100%" height="110" border="0" style="display:block" />
+</a>
+</td>
+</tr>
+<tr>
+<td valign="middle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="100%" valign="middle" bgcolor="#ffffff" class="OpacityBlockWhite mobile-float margin-bottom-10">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+<tr>
+<td height="25">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size:0px; line-height:0px;" width="12">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="12" height="25" border="0" alt="" />
+</td>
+<td valign="bottom">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr align="center" valign="middle">
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="20" valign="top" align="left" style="font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 15px;">
+<a href="%%track {[return offer7replace&$tracking]} -group {offer7}%%" style="text-decoration: none; color:#333333;"><strong>Dom Rep</strong></a>
+</td>
+</tr>
+<tr>
+<td style="color: #666666; font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 12px; line-height: 12px;">from</td>
+</tr>
+<tr>
+<td style="font-family: 'Gotham Rounded Medium',Helvetica,Arial,sans-serif; font-size: 20px; line-height: 20px;">
+<a href="%%track {[return offer7replace&$tracking]} -group {offer7}%%" style="text-decoration: none; color:#e5096e;">&pound;xxx*</a>
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;" width="5">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="4" height="10" border="0" alt="" />
+</td>
+<td width="15">
+<a href="%%track {[return offer7replace&$tracking]} -group {offer7}%%" title="Find out more">
+<img src="http://cslb.creatormail.co.uk/sites/tui/fc/FC16_Master/CTA/pink.png" style="display:block" width="12"  border="0" alt="" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;" width="10">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;">
+<a href="%%track {[return offer7replace&$tracking]} -group {offer7}%%">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" width="94" height="50" border="0" style="display:block" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-size:10px; line-height:10px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" alt="" />		
+</td>
+</tr>
+</table>
+<!--[if gte mso 9]>
+</div>
+</v:textbox>
+</v:rect>
+<![endif]-->
+</td>
+</tr>
+</table>
+</td>
+<!--//LEFT-->
+<td class="mobile-float" >
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" />
+</td>
+<!--RIGHT//-->
+<td class="mobile-float" width="305" valign="top">
+<table class="fluid100" bgcolor="#FFFFFF" width="305" border="0" cellspacing="0" cellpadding="0"  align="right">
+<tr>
+<td background="http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180601/sb8.jpg" style="background-position:left; background-size:cover;" bgcolor="#f5f5f5" width="305" height="160" valign="top">
+<!--[if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:305px;height:200px;">
+<v:fill type="frame" src="http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180601/sb8.jpg" color="#f5f5f5" />
+<v:textbox inset="0,0,0,0">
+<div>
+<![endif]-->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<a href="%%track {[return offer8replace&$tracking]} -group {offer8}%%">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt=""  width="100%" height="110" border="0" style="display:block" />
+</a>
+</td>
+</tr>
+<tr>
+<td valign="middle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="100%" valign="middle" bgcolor="#ffffff" class="OpacityBlockWhite mobile-float margin-bottom-10">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+<tr>
+<td height="25">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size:0px; line-height:0px;" width="12">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="12" height="25" border="0" alt="" />
+</td>
+<td valign="bottom">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr align="center" valign="middle">
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="20" valign="top" align="left" style="font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 15px;">
+<a href="%%track {[return offer8replace&$tracking]} -group {offer8}%%" style="text-decoration: none; color:#333333;"><strong>Cape Verde</strong></a>
+</td>
+</tr>
+<tr>
+<td style="color: #666666; font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 12px; line-height: 12px;">from</td>
+</tr>
+<tr>
+<td style="font-family: 'Gotham Rounded Medium',Helvetica,Arial,sans-serif; font-size: 20px; line-height: 20px;">
+<a href="%%track {[return offer8replace&$tracking]} -group {offer8}%%" style="text-decoration: none; color:#e5096e;">&pound;xxx*</a>
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;" width="5">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="4" height="10" border="0" alt="" />
+</td>
+<td width="15">
+<a href="%%track {[return offer8replace&$tracking]} -group {offer8}%%" title="Find out more">
+<img src="http://cslb.creatormail.co.uk/sites/tui/fc/FC16_Master/CTA/pink.png" style="display:block"  width="12"  border="0" alt="" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;" width="10">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px;">
+<a href="%%track {[return offer8replace&$tracking]} -group {offer8}%%">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" width="94" height="50" border="0"  style="display:block" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-size:10px; line-height:10px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+</table>
+<!--[if gte mso 9]>
+</div>
+</v:textbox>
+</v:rect>
+<![endif]-->
+</td>
+</tr>
+</table>
+</td>
+<!--//RIGHT--> 
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<!-- Spacer//-->
+<table width="620" border="0" align="center" cellpadding="0" cellspacing="0" class="fluid100" >
+<tr>
+<td style="font-size:0px; line-height:0px;" valign="top"><img width="10" src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH140207/spacer.gif" style="display:block" height="30" border="0" /></td>
+</tr>
+</table>
+<!--//Spacer-->
+ 
+<!--PINK PROMO//-->
+<table class="fluid90" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #e5096e;">
+<tr valign="middle">
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="12" border="0" alt="" />
+</td>
+</tr>
+<tr>
+<td>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr align="center" valign="middle">
+<td width="20" style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="20" height="12" border="0" alt="" />
+</td>
+<td style="font-size:18px; font-family:'Gotham Rounded Book',Helvetica,Arial,sans-serif; color:#ffffff;">
+<a href="%%track {[return https://www.firstchoice.co.uk/holiday/deals/package-holidays?$tracking]}  -group {PROMO2}%%" style="color:#ffffff; text-decoration:none;" title="We've rounded up the best winter holiday destinations">We've rounded up the <strong>best winter holiday</strong> destinations</a>
+</td>
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="5" height="12" border="0" alt="" />
+</td>
+<td width="20">
+<a href="%%track {[return https://www.firstchoice.co.uk/holiday/deals/package-holidays?$tracking]}  -group {PROMO2}%%" style="text-decoration: none; font-size:14px; font-family:'Gotham Rounded Book',Helvetica,Arial,sans-serif; color:#ffffff;" title="More">
+<img src="http://cslb.creatormail.co.uk/sites/tui/fc/FC160920/promoanimation.gif" alt="More" width="20" height="20" border="0" style="display:block; font-size:14px; font-family:'Gotham Rounded Book',Helvetica,Arial,sans-serif; color:#ffffff;" />
+</a>
+</td>
+<td width="20" style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="20" height="12" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="middle">
+<td style="font-size:0px; line-height:0px;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="12" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--//PINK PROMO-->
+
+
+<!-- Spacer//-->
+<table width="620" border="0" align="center" cellpadding="0" cellspacing="0" class="fluid100" >
+<tr>
+<td style="font-size:0px; line-height:0px;" valign="top"><img width="10" src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH140207/spacer.gif" style="display:block" height="30" border="0" /></td>
+</tr>
+</table>
+<!--//Spacer-->
+
+
+<!--Catchall//-->
+<table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><table width="620" border="0" align="center" cellpadding="0" cellspacing="0" class="fluid100">
+<tr>
+	<td class="fontsizeH3" align="center" style="color: #666666; font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 28px; line-height: 32px;"><a href="%%track {[return https://www.firstchoice.co.uk/holiday/deals?$tracking]} -group {Catchalltitle}%%" style="text-decoration:none; color:#666666; align: center">Catch these special savings</a></td>
+</tr>
+<tr>
+<td style="font-size:0px; line-height:0px; mso-line-height-rule: exactly;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="16" border="0" /></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td align="center" valign="top"><table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr> 
+<!--Block 1//-->
+<td class="mobile-float" width="305" valign="top">
+<table class="fluid100" bgcolor="#FFFFFF" width="305" border="0" cellspacing="0" cellpadding="0"  align="right">
+<tr>
+<td background="http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180511/ca1.jpg" style="background-position:right; background-size:cover;" bgcolor="#f5f5f5" width="305" height="200" valign="top">
+<!--[if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:305px;height:210px;">
+<v:fill type="frame" src="http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180511/ca1.jpg" color="#f5f5f5" />
+<v:textbox inset="0,0,0,0">
+<div>
+<![endif]-->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-size:0px; line-height:0px; mso-line-height-rule: exactly;">
+<a href="%%track {[return https://www.firstchoice.co.uk/holiday/deals/free-child-places?$tracking]}  -group {CATCHALL1}%%" title="Free kids' places*">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt=""  width="100%" height="110" border="0" style="display:block" />
+</a>
+</td>
+</tr>
+<tr>
+<td valign="middle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="100%" valign="middle" bgcolor="#ffffff" class="OpacityBlockWhite mobile-float margin-bottom-10">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size:0px; line-height:0px; mso-line-height-rule: exactly;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+<tr>
+<td height="25">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size:0px; line-height:0px; mso-line-height-rule: exactly;" width="10">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="25" border="0" alt="" />
+</td>
+<td valign="bottom">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr align="center" valign="middle">
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 18px; line-height: 22px; mso-line-height-rule: exactly;" align="left">
+	<a href="%%track {[return https://www.firstchoice.co.uk/holiday/deals/free-child-places?$tracking]}  -group {CATCHALL1}%%" style="color: #e5096e; text-decoration:none;" title="Free kids' places*">Free kids' places*</a>
+</td>
+</tr>
+<tr>
+<td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="1" height="5" border="0" /></td>
+</tr>
+<tr>
+<td style="color: #000000; font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 12px; line-height: 14px;">Take one of the kids for free</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px; mso-line-height-rule: exactly;" width="5">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="4" height="10" border="0" alt="" />
+</td>
+<td width="10">
+<a href="%%track {[return https://www.firstchoice.co.uk/holiday/deals/free-child-places?$tracking]}  -group {CATCHALL1}%%" title="Find out more">
+<img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/FC/Master/tui-arrow-pink.png" style="display:block" width="10" height="17" border="0" alt="" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px; mso-line-height-rule: exactly;" width="10">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-size:0px; line-height:0px; mso-line-height-rule: exactly;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px; mso-line-height-rule: exactly;" width="100">
+<a href="%%track {[return https://www.firstchoice.co.uk/holiday/deals/free-child-places?$tracking]}  -group {CATCHALL1}%%" title="Free kids' places*">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" width="100" height="60" border="0" style="display:block" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-size:10px; line-height:10px; mso-line-height-rule: exactly;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="20" height="25" border="0" alt="" />		
+</td>
+</tr>
+</table>
+<!--[if gte mso 9]>
+</div>
+</v:textbox>
+</v:rect>
+<![endif]-->
+</td>
+</tr>
+</table>
+</td>
+<!--//Block 1-->
+
+<!-- Spacer//-->
+<td class="mobile-float"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+<!--//Spacer--
+
+<!--Block 2//-->
+<td class="mobile-float" width="305" valign="top">
+<table class="fluid100" bgcolor="#FFFFFF" width="305" border="0" cellspacing="0" cellpadding="0"  align="right">
+<tr>
+<td background="http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180511/ca2.jpg" style="background-position:left; background-size:cover;" bgcolor="#f5f5f5" width="305" height="200" valign="top">
+<!--[if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:305px;height:210px;">
+<v:fill type="frame" src="http://cslb.creatormail.co.uk/sites/tui/2018/SB/FC/180511/ca2.jpg" color="#f5f5f5" />
+<v:textbox inset="0,0,0,0">
+<div>
+<![endif]-->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-size:0px; line-height:0px; mso-line-height-rule: exactly;">
+<a href="%%track {[return https://www.firstchoice.co.uk/holiday/info/low-deposit?$tracking]}  -group {CATCHALL2}%%" title="Low deposits*">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt=""  width="100%" height="110" border="0" style="display:block" />
+</a>
+</td>
+</tr>
+<tr>
+<td valign="middle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="100%" valign="middle" bgcolor="#ffffff" class="OpacityBlockWhite mobile-float margin-bottom-10">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size:0px; line-height:0px; mso-line-height-rule: exactly;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+<tr>
+<td height="25">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size:0px; line-height:0px; mso-line-height-rule: exactly;" width="10">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="25" border="0" alt="" />
+</td>
+<td valign="bottom">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr align="center" valign="middle">
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 18px; line-height: 22px;" align="left">
+	<a href="%%track {[return https://www.firstchoice.co.uk/holiday/info/low-deposit?$tracking]}  -group {CATCHALL2}%%" style="color: #e5096e; text-decoration:none;" title="Low deposits*">Low deposits*</a>
+</td>
+</tr>
+<tr>
+<td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="1" height="5" border="0" /></td>
+</tr>
+<tr>
+<td style="color: #000000; font-family: 'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size: 12px; line-height: 14px;">On holidays for summer 2019</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px; mso-line-height-rule: exactly;" width="5">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="4" height="10" border="0" alt="" />
+</td>
+<td width="10">
+<a href="%%track {[return https://www.firstchoice.co.uk/holiday/info/low-deposit?$tracking]}  -group {CATCHALL2}%%" title="Find out more">
+<img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/FC/Master/tui-arrow-pink.png" style="display:block"  width="10" height="17" border="0" alt="" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px; mso-line-height-rule: exactly;" width="5">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="5" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-size:0px; line-height:0px; mso-line-height-rule: exactly;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" alt="" />
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0px; line-height:0px; mso-line-height-rule: exactly;" width="100">
+<a href="%%track {[return https://www.firstchoice.co.uk/holiday/info/low-deposit?$tracking]}  -group {CATCHALL2}%%" title="Low deposits*">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" width="100" height="60" border="0" style="display:block" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-size:10px; line-height:10px; mso-line-height-rule: exactly;">
+<img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="20" height="20" border="0" alt="" />
+</td>
+</tr>
+</table>
+<!--[if gte mso 9]>
+</div>
+</v:textbox>
+</v:rect>
+<![endif]-->
+</td>
+</tr>
+</table>
+</td>
+<!--//Block 2-->
+</tr>
+</table></td>
+</tr>
+</table>
+<!-- //Catchall -->
+
+</td>
+</tr>
+</table>
+<!--//CONTENT--> 
+
+<!--FOOTER//-->
+<table bgcolor="#ffffff" class="device-width" width="750" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center" valign="top">
+
+ <table class="fluid95" width="620" border="0" cellspacing="0" cellpadding="0" align="center">
+  <!-- ********** SOCIAL BANNER ********** -->
+  <tr>
+    <td bgcolor="#ffffff" style="padding-top:21px; padding-left:20px; padding-bottom:21px;" align="left"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="100" class="mobile-float" style="font-family:'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size:14px; line-height:14px; mso-line-height-rule: exactly; color:#E5096E; text-transform:uppercase;">Follow us</td>
+        <td style="font-size:0px; line-height:0px;" width="10" class="mobile-float"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block" width="10" height="10" border="0" /></td>
+        <td class="mobile-float"><table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="33"><a href="%%track {[return http://www.facebook.com/FirstChoiceHolidays?$tracking]} -group {social1}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/FC/Master/FC_Facebook.png" alt="Facebook"  width="24" height="24" style="display:block" border="0" /></a></td>
+            <td width="33"><a href="%%track {[return https://www.instagram.com/firstchoiceholidays/?$tracking]} -group {social2}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/FC/Master/FC_Instagram.png" alt="Instagram"  width="24" height="24" style="display:block" border="0" /></a></td>
+            <td width="33"><a href="%%track {[return http://twitter.com/fcholidaydeals/?$tracking]} -group {social3}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/FC/Master/FC_Twitter.png" alt="Twitter"  width="24" height="24" style="display:block" border="0" /></a></td>
+            <td width="33"><a href="%%track {[return http://www.youtube.com/user/FirstChoiceHolidays?$tracking]} -group {social4}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/FC/Master/FC_Youtube.png" alt="Youtube"  width="24" height="24" style="display:block" border="0" /></a></td>
+            <td width="33"><a href="%%track {[return https://www.pinterest.com/firstchoice/?$tracking]} -group {social5}%%"><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/FC/Master/FC_Pinterest.png" alt="Pinterest"  width="24" height="24" style="display:block" border="0" /></a></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <!-- ********** END SOCIAL BNR ********** -->
+  <!--FOOTER-->
+  <tr>
+    <td align="left" valign="top" bgcolor="#E5096E"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td style="font-size:0px; line-height:0px;" width="20"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="20" height="15" border="0" /></td>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="20" border="0" /></td>
+          </tr>
+          <tr>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="mobile-float" width="285" border="0" cellspacing="0" cellpadding="0" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="30" align="center" valign="top" style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/FC/Master/FC_Computer.png" width="20" height="20" style="display:block;" border="0" alt="" /></td>
+                        <td style="font-size:0px; line-height:0px;" width="10"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="10" height="15" border="0" /></td>
+                        <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="5" border="0" /></td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="middle" style="font-family:'Gotham Rounded Book',Helvetica,Arial,sans-serif; color:#FFFFFF; font-size:14px; line-height:16px; font-weight: bold; mso-line-height-rule: exactly;"><a href="%%track {[return http://www.firstchoice.co.uk/destinations/?$tracking]} -group {footer}%%" style="color:#FFFFFF; text-decoration:none;">firstchoice.co.uk</a></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="15" /></td>
+                  </tr>
+                  <tr>
+                    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="30" align="center" valign="top" style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/FC/Master/FC_Phone.png" width="20" height="20" style="display:block;" border="0" alt="" /></td>
+                        <td align="left" valign="top" style="padding:0 10px 0 10px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td align="left" valign="middle"  style="font-family:'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size:14px; line-height:21px; font-weight: bold; mso-line-height-rule:exactly; color:#666666;"><a href="tel:02034512688" style="color:#FFFFFF; text-decoration:none;"> 0203&nbsp;451&nbsp;2688<sup style="font-size:11px; line-height:12px;">&dagger;</sup></a></td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="middle"  style="font-family:'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size:12px; line-height:15px; mso-line-height-rule:exactly; color:#FFFFFF; text-decoration:none;">&dagger;(Calls from UK landlines cost the standard rate, but calls from mobiles may be higher. Check with your network provider.)</td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                </table></td>
+                <td class="mobile-float" style="font-size:0; line-height:0px;" width="10"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="15" /></td>
+                <td class="mobile-float" valign="top" width="285" border="0" cellspacing="0" cellpadding="0" align="left"><table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="30" align="center" valign="top" style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/2017/SB/FC/Master/FC_Pin.png" width="20" height="20" style="display:block;" border="0" alt="" /></td>
+                        <td  style="font-size:0; line-height:0px;" width="10"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="15" /></td>
+                        <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td align="left" valign="middle" style="font-family:'Gotham Rounded Book',Helvetica,Arial,sans-serif; color:#FFFFFF; font-size:15px; font-weight: bold; padding:0 0px 0px 0; line-height:21px; mso-line-height-rule: exactly; padding:0 0 0px 0px;">Visit your local shop</td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="top" style="font-family:'Gotham Rounded Book',Helvetica,Arial,sans-serif; color:#FFFFFF; font-size:12px; padding:0; line-height:16px; mso-line-height-rule: exactly; padding:0px 20px 0px 0px;"> Please use our <a href="%%track {[return http://www.firstchoice.co.uk/holiday/shop-finder?$tracking]} -group {shopfinder}%%" style="color:#FFFFFF; text-decoration:underline;">shop finder</a> to find your nearest shop</td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                </table></td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td style="font-size:0px; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="15" height="20" border="0" /></td>
+          </tr>
+        </table></td>
+        <td style="font-size:0px; line-height:0px;" width="20"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" style="display:block"  width="20" height="15" border="0" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  <!--END FOOTER-->
+  <tr>
+    <td><!-- FCO//-->
+      <table class="fluid90" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="20" /></td>
+        </tr>
+      </table>
+      <table class="fluid100" align="center" width="620" border="0" cellspacing="0" cellpadding="20">
+        <tr>
+          <td bgcolor="#dcdcdc"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="fluid100">
+            <tr>
+              <td class="mobile-float" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="80" align="left" valign="top" class="mobile-float"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/FCO1609/ta_bl.png" style="display:block"  width="80"  border="0" height="71" class="" /></td>
+                  <td style="font-size:0; line-height:0px;" class="mobile-float"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="20" height="10" /></td>
+                  <td class="mobile-float" valign="bottom"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td align="left" valign="bottom" style="font-family:'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size:16px; line-height:18px; mso-line-height-rule: exactly; color:#000000;">TRAVEL AWARE - <strong>STAYING SAFE AND HEALTHY ABROAD.</strong></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="10" /></td>
+                    </tr>
+                    <tr>
+                      <td style="font-family:'Gotham Rounded Book',Helvetica,Arial,sans-serif; font-size:12px; line-height:14px; mso-line-height-rule: exactly; color:#000000;">The Foreign &amp; Commonwealth Office and the National Travel Health Network and Centre have up-to-date advice on staying safe and healthy abroad. For the latest travel advice from the Foreign &amp; Commonwealth Office including security and local laws, plus passport and visa information check <a href="%%track {[return http://www.gov.uk/travelaware?$tracking]} -group {FCO}%%" style="text-decoration:none; font-weight:bold; color:#000000;">www.gov.uk/travelaware</a> and follow <a href="%%track {[return https://twitter.com/FCOtravel?$tracking]} -group {FCO}%%" style="text-decoration:none; font-weight:bold; color:#000000;"> @FCOtravel </a>and <a href="%%track {[return https://facebook.com/FCOtravel?$tracking]} -group {FCO}%%" style="text-decoration:none; font-weight:bold; color:#000000;">Facebook.com/FCOtravel.</a> <br />
+                        <br />
+                        More information is available by checking <a href="%%track {[return http://www.firstchoice.co.uk/holiday/content/travel-aware?$tracking]} -group {FCO}%%" style="text-decoration:none; font-weight:bold; color:#000000;">www.firstchoice.co.uk/holiday/content/travel-aware.</a> Keep informed of current travel health news by visiting <a href="%%track {[return http://www.travelhealthpro.org.uk?$tracking]} -group {FCO}%%" style="text-decoration:none; font-weight:bold; color:#000000;">www.travelhealthpro.org.uk</a><br />
+                        <br />
+                        The advice can change so check regularly for updates.</td>
+                    </tr>
+                  </table></td>
+                </tr>
+              </table></td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <!-- //FCO-->
+      <!--TERMS AND CONDITIONS-->
+      <table class="device-width" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="20" /></td>
+        </tr>
+      </table>
+      <table width="620" cellspacing="0" border="0" align="center" cellpadding="0" class="fluid90">
+        <tr>
+          <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height: 14px; color:#666666; text-decoration:none; padding-top:5px" valign="top" align="left"><strong>Terms and conditions</strong><br />
+            <br />
+            *All prices quoted are correct as of 22nd March 2018 at 6am. All prices quoted include accommodation, flights, in resort transfers, taxes and estimated fuel charges and are based on the departure date, airports, board basis and number of persons sharing specified only. We reserve the right to withdraw these offers at any time without notice. Additional supplements and charges may apply. Full booking terms and conditions apply, please click <a style="color:#666666; text-decoration:underline" href="%%track {[return http://www.firstchoice.co.uk/our-policies/terms-of-use/?$tracking]} -group {tnc}%%" title="full details">here</a> for full details or see the relevant brochure. <br />
+            <br />
+            <strong>Summer sizzlers:</strong><br />
+            
+            <strong>Costa Rica from &pound;xxx</strong> - departs 7th May 2018 from London Stansted to Arenal d'en Castell, Menorca, Balearic Islands, Spain based on 2 sharing at the Marina Parc Hotel for 3 nights.<br />
+            
+            
+            <strong>Balearics from &pound;xxx</strong> - departs 2nd May 2018 from London Gatwick to Coral Bay, Paphos Region, Balearics based on 2 sharing at the Hotel Crown Resorts Horizon for 3 nights.<br />
+            
+            
+            <strong>Greece from &pound;xxx</strong> - departs 3rd May 2018 from Manchester to Nuevo Vallarta, Mexico - Pacific Coast, Mexico based on 2 sharing at the Royal Decameron Complex for 3 nights.<br />
+            
+            
+            <strong>Mexico from &pound;xxx</strong> - departs 9th May 2018 from London Gatwick to Costa Caleta, Fuerteventura, Canary Islands, Spain based on 2 sharing at the Labranda Tahona Garden for 3 nights.
+            
+           
+            <br />
+            <br />
+            
+            
+            <strong>Winter wanderers:</strong><br />
+            
+            <strong>Canaries from &pound;xxx</strong> - departs 7th May 2018 from London Stansted to Arenal d'en Castell, Menorca, Balearic Islands, Spain based on 2 sharing at the Marina Parc Hotel for 3 nights.<br />
+            
+            
+            <strong>Jamaica from &pound;xxx</strong> - departs 2nd May 2018 from London Gatwick to Coral Bay, Paphos Region, Canaries based on 2 sharing at the Hotel Crown Resorts Horizon for 3 nights.<br />
+            
+            
+            <strong>Dom Rep from &pound;xxx</strong> - departs 3rd May 2018 from Manchester to Nuevo Vallarta, Mexico - Pacific Coast, Mexico based on 2 sharing at the Royal Decameron Complex for 3 nights.<br />
+            
+            
+            <strong>Cape Verde from &pound;xxx</strong> - departs 9th May 2018 from London Gatwick to Costa Caleta, Fuerteventura, Canary Islands, Spain based on 2 sharing at the Labranda Tahona Garden for 3 nights.
+            
+           
+            <br />
+            <br />
+            
+            
+            <strong>Save an extra &pound;150 per booking on summer holidays with code SALE150</strong> - Save an extra &pound;150 per booking including children aged 2 and over on package holidays. Discount is valid on our package holidays departing between 1st May 2018 and 31st October 2018. The minimum spend is &pound;1000 per booking and before any extras such as insurance, room upgrades &amp; selecting seats, are added. The offer is valid from 9th February 2018 on firstchoice.co.uk and in TUI stores. The offer is not valid on bookings made through any Call Centre. The offer does not apply to group bookings of more than 9 people, hotel only, flight only, and ski bookings. This offer is only valid for new bookings and can only be redeemed once. Enter the code <strong>SALE150</strong> in upper case when on the holiday payment page of our website, the code will be applied in store. Normal booking terms and conditions apply. The offer is subject to availability and may change or be withdrawn without notice. This promotional code is non-transferable and not valid in conjunction with any other discount code. Promoter's Details: TUI is a trading name of TUI UK Limited, a member of TUI Group. 
+		
+		<br />
+		
+		<br />
+		
+		<strong>Save an extra &pound;200 per booking on selected long haul holidays with code LH200</strong> - Save an extra &pound;200 per booking including children aged 2 and over on long-haul package holidays. Discount is valid on our long-haul package holidays departing between 1st March 2018 and 31st October 2018. The minimum spend is &pound;1500 per booking and before any extras such as insurance, room upgrades &amp; selecting seats, are added. The offer is valid from 9th February 2018 on firstchoice.co.uk and in TUI stores. The offer is not valid on bookings made through any Call Centre. The offer does not apply to group bookings of more than 9 people, hotel only, flight only and ski bookings. This offer is only valid for new bookings and can only be redeemed once. Enter the code <strong>LH200</strong> in upper case when on the holiday payment page of our website, the code will be applied in store. Normal booking terms and conditions apply. The offer is subject to availability and may change or be withdrawn without notice. This promotional code is non-transferable and not valid in conjunction with any other discount code. Promoter's Details: TUI is a trading name of TUI UK Limited, a member of TUI Group.
+		
+		<br />
+		
+		<br />
+            
+            
+            
+            
+            
+            <strong>We are unable to respond to replies to this email, please contact us </strong><a style="font-family:Arial, Helvetica, sans-serif; font-size: 11px; color:#666666; text-decoration: underline;" id="Contact Form" name="Contact Form" href="%%track {[return http://www.firstchoice.co.uk/holiday/contact-us?$tracking]} -group {terms}%%" target="_blank">here</a>. <br />
+            <br />
+            All offers within this email exclude flight only, accommodation only, ski, tailor made flight+hotel bookings booked on <a style="color:#666666; text-decoration:underline" href="%%track {[return http://www.firstchoice.co.uk/?$tracking]} -group {tnc}%%" title="firstchoice.co.uk">firstchoice.co.uk</a> and any other bookings.<br />
+            <br />
+            All advertised shop opening times are subject to change.<br />
+            <br />
+            All Inclusive: all activities are subject to availability and may not be available at all hotels. All Inclusive drinks may vary and will only apply to locally produced. </td>
+        </tr>
+      </table>
+      <table class="device-width" align="center" width="620" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td style="font-size:0; line-height:0px;"><img src="http://cslb.creatormail.co.uk/sites/tui/thomson/TH131213/spacer.gif" alt="" border="0" style="display:block" width="10" height="20" /></td>
+        </tr>
+      </table>
+      <!--TERMS AND CONDITIONS--></td>
+  </tr>
+</table></td>
+</tr>
+</table>
+<!--//FOOTER--> 
+
+</td>
+</tr>
+</table><!-- //Wrapper -->
+
+
+</body>
+</html>
