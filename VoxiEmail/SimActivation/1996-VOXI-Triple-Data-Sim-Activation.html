@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VOXI</title>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta name="x-apple-disable-message-reformatting"><!--[if gte mso 9]><xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml><![endif]-->
+    <style type="text/css">
+    body {
+    margin: 0px;
+    padding: 0px;
+    }
+    img {
+    display: block;
+    -ms-interpolation-mode: bicubic;
+    }
+    a img {
+    border: none !important;
+    }
+    body {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    }
+    a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+    }
+    * {
+    line-height: 100%;
+    }
+    .ExternalClass {
+    width: 100%;
+    }
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+    line-height: 100%;
+    }
+    #outlook a {
+    padding: 0;
+    }
+    table {
+    box-sizing:content-box;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+    }
+    table td {
+    border-collapse: collapse;
+    }
+    @font-face {
+    font-family:'RegularVOXI';
+    font-weight:normal!important;
+    font-style:normal!important;
+    src:url('https://s3-eu-west-1.amazonaws.com/tmw-static/vodafone/fonts/RegularVOXI-RegularWEB.woff2');
+    mso-font-alt:'Arial';
+    }
+    @font-face {
+    font-family:'RegularVOXI-Bold';
+    font-weight:normal!important;
+    font-style:normal!important;
+    src:url('https://s3-eu-west-1.amazonaws.com/tmw-static/vodafone/fonts/RegularVOXI-BoldWEB.woff2');
+    mso-font-alt:'Arial';
+    }
+    @font-face {
+    font-family:'RegularVOXI-Semibold';
+    font-weight:normal!important;
+    font-style:normal!important;
+    src:url('https://s3-eu-west-1.amazonaws.com/tmw-static/vodafone/fonts/RegularVOXI-SemiboldWEB.woff2');
+    mso-font-alt:'Arial';
+    }
+    .gmailfix {
+    display:none;
+    display:none!important;
+    }
+    body {
+    margin: 0px;
+    padding: 0px;
+    }
+    img {
+    display: block;
+    -ms-interpolation-mode: bicubic;
+    }
+    a img {
+    border: none !important;
+    }
+    body {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    }
+    a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+    }
+    * {
+    line-height: 100%;
+    }
+    .ExternalClass {
+    width: 100%;
+    }
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+    line-height: 100%;
+    }
+    #outlook a {
+    padding: 0;
+    }
+    table {
+    box-sizing:content-box;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+    }
+    table td {
+    border-collapse: collapse;
+    }
+    @font-face {
+    font-family:'RegularVOXI';
+    font-weight:normal!important;
+    font-style:normal!important;
+    src:url('https://s3-eu-west-1.amazonaws.com/tmw-static/vodafone/fonts/RegularVOXI-RegularWEB.woff2');
+    mso-font-alt:'Arial';
+    }
+    @font-face {
+    font-family:'RegularVOXI-Bold';
+    font-weight:normal!important;
+    font-style:normal!important;
+    src:url('https://s3-eu-west-1.amazonaws.com/tmw-static/vodafone/fonts/RegularVOXI-BoldWEB.woff2');
+    mso-font-alt:'Arial';
+    }
+    @font-face {
+    font-family:'RegularVOXI-Semibold';
+    font-weight:normal!important;
+    font-style:normal!important;
+    src:url('https://s3-eu-west-1.amazonaws.com/tmw-static/vodafone/fonts/RegularVOXI-SemiboldWEB.woff2');
+    mso-font-alt:'Arial';
+    }
+    .gmailfix {
+    display:none;
+    display:none!important;
+    }
+    .guide {
+    width: 100%;
+    text-align: center;
+    color: #e60000;
+    font-family: VodafoneBold, Arial;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 0px 15px 0px !important;
+    }
+    @media only screen and (max-width: 480px), (max-device-width: 480px) {
+    @-ms-viewport{width:device-width}
+    .wrapper {
+    min-width: 0px !important;
+    }
+    .full-width {
+    width: 100% !important;
+    min-width: 0px !important;
+    }
+    .hide {
+    display: none !important;
+    visibility: none !important;
+    overflow: hidden !important;
+    }
+    .show_on_mobile {
+    display: block !important;
+    width: 100% !important;
+    max-height: inherit !important;
+    overflow: visible !important;
+    float: none !important;
+    }
+    .pad20 {
+    padding-left:30px !important;
+    padding-right:30px !important;
+    padding-top: 20px !important;
+    }
+    .{
+    padding-left:30px !important;
+    padding-right:30px !important;
+    }
+    .padding0 {
+    padding-left:0px !important;
+    padding-right:0px !important;
+    }
+    .btm-padding {
+    padding-right:0 !important;
+    padding-bottom: 10px !important;
+    }
+    
+    .button {
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer !important;
+    display: inline-block !important;
+    width: 100% !important;
+    }
+    
+    }
+    </style>
+    <!--[if mso]>
+    <style type="text/css">
+    .body-text { font-family: Arial, Helvetica, sans-serif !important; }
+    </style>
+    <![endif]-->
+  </head>
+  <body class="body" bgcolor="#ffffff" style="background-color:#ffffff; padding:0;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
+      <tr>
+        <td align="center" style="background-color:#ffffff;">
+          <table border="0" cellpadding="0" cellspacing="0" width="600" style="min-width:600px;" class="full-width" role="presentation">
+            <tr>
+              <td align="center">
+                <!-- modules start-->
+
+                <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="full-width" style="min-width:600px; width:600px;" width="600">
+                  <!--[if !mso]><!-- -->
+                 <tr>
+                    <td class="full-width">
+                      <a href="https://www.voxi.co.uk/" target="_blank"><img alt="VOXI by Vodafone - Sim Activation" border="0" class="full-width" src="images/1996_SIM_Activation_Header.gif" style="display:block; border:none;" width="600"></a>
+                    </td>
+                  </tr>
+                  <!--<![endif]-->
+                  <!--[if mso]>
+                  <tr>
+                    <td align="center" valign="top"><a href="https://www.voxi.co.uk/" target="_blank"><img src="images/1488_SIM_A_Double_Awesome_Header_Desk_FB.jpg" width="600" height="335" alt="VOXI by Vodafone - Sim Activation" border="0" class="full-width" style="display:block; border:none;"></a></td>
+                  </tr>
+                  <![endif]-->
+                </table>
+                <!-- endless posibilites -->
+                <table bgcolor="#181614" border="0" cellpadding="0" cellspacing="0" class="full-width" style="min-width:600px; width:600px;" width="600">
+                 <tr>
+                   <td align="center" style="padding: 0 30px;">
+                     <table align="center" bgcolor="#181614" border="0" cellpadding="0" cellspacing="0" class="full-width" style="max-width: 500px; width:500px;" width="500">
+                      <tr>
+                            <td align="center" class="font28 body-text" style="font-family:RegularVOXI-Bold, Arial; font-size:32px; line-height:36px; color:#ffffff; padding:36px 0px 18px 0px;" valign="top">Triple data when you activate</td>
+                          </tr>
+                        <tr>
+                          <td align="center" class="body-text" style="font-family:RegularVOXI, Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; color:#ffffff; padding: 0 0 20px 0;" valign="top">
+                           With a VOXI plan, we've got you covered with endless social data. That means snapping, posting, tweeting, streaking – the lot.
+                            <br /><br />
+                            Plus, we've officially gone data-crazy and are now tripling all data plans for 24 months. So you can enjoy three times as much of everything else.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="body-text" style="font-family:RegularVOXI-Bold, Arial, Helvetica, sans-serif; font-size:32px; line-height:40px; color:#ffffff; padding: 0 0px 18px 0px;" valign="top">You've got all this
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="body-text"  style="font-family:RegularVOXI, Arial, Helvetica, sans-serif; font-size:22px; line-height:26px; color:#ffffff; padding: 0 0px 10px 0px;" valign="top">1. Endless Social Data</td>
+                        </tr>
+                        <tr>
+                          <td align="center" style="padding: 0;" valign="top">
+                            <table border="0" cellpadding="0" cellspacing="0">
+                              <tr>
+                                <td style="padding-right:15px;" valign="top"><img alt="Facebook" border="0" src="https://s3.eu-west-2.amazonaws.com/tmw-email/Voxi/44391-VOXI-UCAS/facebook.jpg" style="display:block; border:none;" width="28"></td>
+                                <td style="padding-right:15px;" valign="top"><img alt="Whatsapp" border="0" src="https://s3.eu-west-2.amazonaws.com/tmw-email/Voxi/44391-VOXI-UCAS/whatsapp.jpg" style="display:block; border:none;" width="30"></td>
+                                <td style="padding-right:15px;" valign="top"><img alt="Snapchat" border="0" src="https://s3.eu-west-2.amazonaws.com/tmw-email/Voxi/44391-VOXI-UCAS/snapchat.jpg" style="display:block; border:none;" width="33"></td>
+                                <td valign="top"><img alt="Twitter" border="0" src="https://s3.eu-west-2.amazonaws.com/tmw-email/Voxi/44391-VOXI-UCAS/twitter.jpg" style="display:block; border:none;" width="33"></td>
+                              </tr>
+                              <tr>
+                                <td colspan="4" height="18" style="font-size:0; line-height:35px; mso-line-heightrule:exactly;"></td>
+                              </tr>
+                              <tr>
+                                <td style="padding-right:15px;" valign="top"><img alt="instagram" border="0" src="https://s3.eu-west-2.amazonaws.com/tmw-email/Voxi/44391-VOXI-UCAS/instagram.jpg" style="display:block; border:none;" width="28"></td>
+                                <td style="padding-right:15px;" valign="top"><img alt="Messenger" border="0" src="https://s3.eu-west-2.amazonaws.com/tmw-email/Voxi/44391-VOXI-UCAS/messenger.jpg" style="display:block; border:none;" width="28"></td>
+                                <td style="padding-right:15px;" valign="top"><img alt="Pinterest" border="0" src="https://s3.eu-west-2.amazonaws.com/tmw-email/Voxi/44391-VOXI-UCAS/pintinterest.jpg" style="display:block; border:none;" width="28"></td>
+                                <td valign="top"><img alt="Viber" border="0" src="https://s3.eu-west-2.amazonaws.com/tmw-email/Voxi/44391-VOXI-UCAS/viber.jpg" style="display:block; border:none;" width="29"></td>
+                              </tr>
+                              <tr>
+                                <td colspan="4" height="18" style="font-size:0; line-height:35px; mso-line-heightrule:exactly;"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="body-text"  style="font-family:RegularVOXI, Arial, Helvetica, sans-serif; font-size:22px; line-height:26px; color:#ffffff; padding: 0 0px 20px 0px;" valign="top">2. Triple Data for everything else</td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="body-text" style="font-family:RegularVOXI, Arial, Helvetica, sans-serif; font-size:22px; line-height:26px; color:#ffffff; padding: 0 0 20px 0;" valign="top">3. Endless calls & texts</td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="body-text" style="font-family:RegularVOXI, Arial, Helvetica, sans-serif; font-size:22px; line-height:26px; color:#ffffff; padding: 0 0 20px 0;" valign="top">4. Plans from just £10</td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="body-text" style="font-family:RegularVOXI, Arial, Helvetica, sans-serif; font-size:22px; line-height:26px; color:#ffffff; padding: 0 0 20px 0;" valign="top">5. Free Customised Phone Case</td>
+                        </tr>
+                        <!--  CTA -->
+                        <tr>
+                          <td align="center" style="padding: 0 10px 36px;">
+                            <div>
+                              <!--[if mso]>
+                              <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.voxi.co.uk/activate/activate-free-sim?cid=email-ex-cid-auto/nuojdnojvt/ynw/6" style="height:52px;v-text-anchor:middle;width:260px;" stroke="f" fillcolor="#ffffff">
+                                <w:anchorlock/>
+                              <center>
+                              <![endif]-->
+                              <a href="https://www.voxi.co.uk/activate/activate-free-sim?cid=email-ex-cid-auto/nuojdnojvt/ynw/6" style="background-color:#ffffff;color:#000000;display:inline-block;font-family:RegularVOXI-Bold, Arial, Helvetica, sans-serif; font-size:20px;font-weight:bold;line-height:52px;text-align:center;text-decoration:none;width:260px;-webkit-text-size-adjust:none;" target="_blank">Activate now</a>
+                              <!--[if mso]>
+                              </center>
+                              </v:rect>
+                              <![endif]-->
+                            </div>
+
+                          </td>
+                        </tr>
+                    </table>
+                   </td>
+                 </tr>
+                </table>
+
+                <!-- Social -->
+
+                <!-- Doube data-->
+
+                <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" class="full-width" style="min-width:600px; width:600px;" width="600">
+                 <tr>
+                   <td align="center" style="padding: 0 30px;">
+                     <table align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" class="full-width" style="max-width: 500px; width:500px;" width="500">
+                      <tr>
+                        <td height="36" style="font-size:0; line-height:36px; mso-line-heightrule:exactly;"></td>
+                      </tr>
+                      <tr>
+                        <td align="center" class="font28" style="font-family:RegularVOXI-Semibold, Arial, Helvetica, sans-serif; font-size:32px; line-height:40px; color:#181614; padding: 0 0px 18px 0px;" valign="top">Say hi to Triple Data</td>
+                      </tr>
+                      <tr>
+                        <td align="center" class="body-text" style="font-family:RegularVOXI, Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; color:#181614; padding: 0 0 30px 0;" valign="top">With triple data on everything else, that means triple shopping, triple swiping, and triple googling of everything and anything. Even three-tongued cat videos.</td>
+                      </tr>
+                    </table>
+                    <!--  ======== DOUBLE DATA 4GB ======== -->
+                    <table border="0" cellpadding="0" cellspacing="0" class="full-width">
+                      
+                      <tr class="hide">
+                        <td align="center" style="padding:0;">
+                           <img src="images/triple-data-4gb-wbg.jpg" alt="Offer ends 3 December" width="450" style="display: block; border: 0;" class="full-width" />
+                        </td>
+                      </tr>
+                      <!--[if !mso]><!-->
+                      <tr>
+                        <td align="center" class="show_on_mobile" style="width:0; max-height:0; overflow:hidden; float:left; display:none; font-size:0px; padding:0;" valign="top">
+                          <img src="images/triple-data-4gb-wbg-m.jpg" alt="Offer ends 3 December" style="display: block; border: 0;" class="full-width" />
+                        </td>
+                      </tr>
+                      <!--<![endif]-->
+                    </table>
+                    <!-- ======== DOUBLE DATA 4GB ENDS ======== -->
+
+                   </td>
+                 </tr>
+                 <tr>
+                    <td height="36" style="font-size:0; line-height:35px; mso-line-heightrule:exactly;"></td>
+                  </tr>
+                </table>
+
+                <!-- Doube data ENDS -->
+
+                <!-- modules ENDS-->
+                <!-- what to do next -->
+                <table bgcolor="#181614" border="0" cellpadding="0" cellspacing="0" class="full-width" style="min-width:600px; width:600px;" width="600">
+                  <tr>
+                    <td align="center" class="full-width mobileHeaderFont" style="font-family:RegularVOXI-Bold, Arial; font-size:22px; line-height:24px; color:#ffffff; padding:36px 40px 18px 40px;" valign="top">What to do next</td>
+                  </tr>
+                </table>
+                
+                <table bgcolor="#181614" border="0" cellpadding="0" cellspacing="0" class="full-width" style="min-width:600px; width:600px;" width="600">
+                  <tr>
+                    <td align="center" class="full-width" style="padding:0px 40px 18px 40px;" valign="top">
+                      
+                      <table cellpadding="0" cellspacing="0" border="0" width="440" class="full-width">
+                        <tr>
+                          <td width="41"><img src="images/44293_wtd-1.jpg" width="41" height="59" border="0" style="display:block" alt=""></td>
+                          <td class="body-text" style="font-family:RegularVOXI, Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; color:#ffffff; padding: 10px 0px 10px 30px">
+                            If you're not with Vodafone or Talkmobile, contact your network to unlock your phone.
+                          </td>
+                        </tr>
+                      </table>
+                      
+                    </td>
+                  </tr>
+                </table>
+                
+                <table bgcolor="#181614" border="0" cellpadding="0" cellspacing="0" class="full-width" style="min-width:600px; width:600px;" width="600">
+                  <tr>
+                    <td align="center" class="full-width" style="padding:0px 40px 18px 40px;" valign="top">
+                      
+                      <table cellpadding="0" cellspacing="0" border="0" width="440" class="full-width">
+                        <tr>
+                          <td width="41"><img src="images/44293_wtd-2.jpg" width="41" height="59" border="0" style="display:block" alt=""></td>
+                          <td class="body-text" style="font-family:RegularVOXI, Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; color:#ffffff; padding: 10px 0px 10px 30px">
+                            Take your number with you. Contact your network for your PAC code.
+                          </td>
+                        </tr>
+                      </table>
+                      
+                    </td>
+                  </tr>
+                </table>
+                
+                <table bgcolor="#181614" border="0" cellpadding="0" cellspacing="0" class="full-width" style="min-width:600px; width:600px;" width="600">
+                  <tr>
+                    <td align="center" class="full-width" style="padding:0px 40px 34px 40px;" valign="top">
+                      
+                      <table cellpadding="0" cellspacing="0" border="0" width="440" class="full-width">
+                        <tr>
+                          <td width="41"><img src="images/44293_wtd-3.jpg" width="41" height="59" border="0" style="display:block" alt=""></td>
+                          <td class="body-text" style="font-family:RegularVOXI, Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; color:#ffffff; padding: 10px 0px 10px 30px">
+                            You lost your SIM, didn't you? <a href="https://www.voxi.co.uk/order-free-sim/new-customer?cid=email-ex-cid-auto/nuojdnojvt/ynw/6" style="color:#ffffff; text-decoration:underline; font-weight: bold; font-family:RegularVOXI-Bold, Arial, Helvetica, sans-serif;" target="_blank">Order another here</a>.
+                          </td>
+                        </tr>
+                      </table>
+                      
+                    </td>
+                  </tr>
+                </table>
+                
+                <table bgcolor="#181614" border="0" cellpadding="0" cellspacing="0" class="full-width" style="min-width:600px; width:600px;" width="600">
+                  <tr>
+                    <td align="center" style="padding: 0 10px 50px;">
+                      <div>
+                       <!--[if mso]>
+                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.voxi.co.uk/activate/activate-free-sim?cid=email-ex-cid-auto/nuojdnojvt/ynw/6" style="height:52px;v-text-anchor:middle;width:260px;" stroke="f" fillcolor="#ffffff">
+                          <w:anchorlock/>
+                          <center>
+                        <![endif]-->
+                            <a href="https://www.voxi.co.uk/activate/activate-free-sim?cid=email-ex-cid-auto/nuojdnojvt/ynw/6" style="background-color:#ffffff;color:#000000;display:inline-block;font-family:RegularVOXI-Bold, Arial, Helvetica, sans-serif; font-size:20px;font-weight:bold;line-height:52px;text-align:center;text-decoration:none;width:260px;-webkit-text-size-adjust:none;" target="_blank">Activate now</a>
+                        <!--[if mso]>
+                          </center>
+                        </v:rect>
+                      <![endif]-->
+
+                    </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="2" style="border-top: 2px solid #e60000; height:2px !important;" valign="top"></td>
+                  </tr>
+                </table>
+    
+                
+                 <!-- FOOTER -->
+
+                <table border="0" cellpadding="0" cellspacing="0" class="full-width" style="min-width:600px; width:600px;" width="600">
+             
+                  <tr>
+                    <td align="center" bgcolor="#181614" style="padding:36px 20px;" valign="top">
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <td align="center" class="body-text" style="font-family:RegularVOXI, Arial; font-size:17px; line-height:22px; color:#ffffff; padding: 0;" valign="top"><strong>Need help?</strong>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <table border="0" cellpadding="0" cellspacing="0" style="max-width: 350px;" width="100%">
+                              <tr>
+                                <td align="center" class="body-text" style="font-family:RegularVOXI, Arial; font-size:17px; line-height:22px; color:#b9b9b9; padding:0 0 36px;" valign="top">You may find the answer in our <a href="http://help.voxi.co.uk?cid=email-ex-cid-auto/wvbom/iqeuvcq/qcnje" style="color:#ffffff; text-decoration:underline;" target="_blank">FAQs</a>, or you can talk to us directly via the links below.</td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" valign="top">
+                            <table border="0" cellpadding="0" cellspacing="0">
+                              <tr>
+                                <td valign="top"><a href="https://www.facebook.com/VOXIUK/" target="_blank"><img alt="Facebook" src="http://asset.davinci-crm.com/assets/1025/VOXI/Welcome/facebook.png" style="display:block; border:none;" width="25"></a>
+                                </td>
+                                <td width="50"></td>
+                                <td valign="top"><a href="http://m.me/VOXIUK" target="_blank"><img alt="Messenger" src="http://asset.davinci-crm.com/assets/1025/VOXI/Welcome/messenger.png" style="display:block; border:none;" width="26"></a></td>
+                                <td width="50"></td>
+                                <td valign="top"><a href="https://twitter.com/voxi_uk" target="_blank"><img alt="Twitter" src="http://asset.davinci-crm.com/assets/1025/VOXI/Welcome/twitter.png" style="display:block; border:none;" width="30"></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="5" height="36" style="font-size:0; line-height:35px; mso-line-heightrule:exactly;"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="2" style="border-top: 2px solid #ffffff; height:2px !important;" valign="top"></td>
+                        </tr>
+                        <tr>
+                          <td align="center" style="padding-top: 18px;" valign="top" width="100%">
+                            <table border="0" cellpadding="0" cellspacing="0" class="full-width" style="min-width:560px; width:560px;" width="560">
+                              <tr>
+                                <td align="left" valign="top">
+                                  <!--[if gte mso 9]><td valign="top" width="235"><![endif]-->
+                                  <table align="left" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;" width="33%">
+                                    <tr>
+                                      <td align="left" class="body-text" style="font-family:RegularVOXI, Arial; font-size:12px; line-height:18px; color:#b9b9b9;" valign="top"><a href="https://www.voxi.co.uk/terms-conditions?cid=email-ex-cid-auto/wvbom/iqeuvcq/qcnje" class="body-text" style="font-family:RegularVOXI, Arial; font-size:12px; line-height:18px; color:#b9b9b9; text-decoration:none;" target="_blank">Terms</a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <!--[if gte mso 9]></td><td align="center" valign="top" width="139"><![endif]-->
+                                  <table align="left" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;" width="33%">
+                                    <tr>
+                                      <td align="center" class="body-text" style="font-family:RegularVOXI, Arial; font-size:12px; line-height:18px; color:#b9b9b9;" valign="top"><a href="https://www.voxi.co.uk/privacy-policy?cid=email-ex-cid-auto/wvbom/iqeuvcq/qcnje" class="body-text" style="font-family:RegularVOXI, Arial; font-size:12px; line-height:18px; color:#b9b9b9; text-decoration:none; white-space:nowrap !important" target="_blank">Privacy&nbsp;policy</a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <!--[if gte mso 9]></td><td valign="top" width="186"><![endif]-->
+                                  <table align="right" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;" width="33%">
+                                    <tr>
+                                      <td align="right" class="body-text" style="font-family:RegularVOXI, Arial; font-size:12px; line-height:18px; color:#b9b9b9;" valign="top"><a href="https://info.voxi.co.uk/Unsubscribe/campaign?MSISDN=$(TG_MSISDN)&EMAIL=$(TG_EMAIL)&CAMPAIGN_CODE=$(TG_CAMPAIGN_CODE)&CELL_CODE=$(TG_CELL_CODE)&EXTRACT_DT=$(TG_EXTRACT_DT)" class="body-text" style="font-family:RegularVOXI, Arial; font-size:12px; line-height:18px; color:#b9b9b9; text-decoration:none;" target="_blank">Unsubscribe</a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table border="0" cellpadding="0" cellspacing="0" class="full-width" style="min-width:560px; width:560px;" width="560">
+                              <tr>
+                                <td align="center" class="padding0 body-text" style="font-family:RegularVOXI, Arial; font-size:10px; line-height:17px; color:#b9b9b9; padding:36px 30px;" valign="top">Endless chat: Unlimited calls to std mobiles & landlines (UK: 01, 02, 03), SMS/MMS to use in UK & 48 Europe Zone destinations. Endless data on social and chat apps: You must have some data left on your plan to enjoy endless data on selected apps.
+                          <br /><br />
+                          Triple data: New & existing customers. Triple the data compared to the data available on VOXI plans between Sept 2017 and May 2018. Data in the UK & our 48 Europe Zone destinations.
+                          <br /><br />
+                          Refresh your plan each month consecutively to enjoy the triple data offer for 24 months. If your plan is not refreshed the triple data offer will end.
+                          <br /><br />See <a href="https://www.voxi.co.uk/" style="font-family:RegularVOXI, Arial; font-size:10px; line-height:18px; color:#b9b9b9; text-decoration:none;" target="_blank">voxi.co.uk</a>. Offer ends 16 September 2018.
+                          <br /><br />
+                          Free case/offers: Subject to availability. Follow instructions in your VOXI welcome email. For terms: <a href="https://www.voxi.co.uk/terms-conditions?cid=email-ex-cid-auto/wvbom/iqeuvcq/qcnje" style="font-family:RegularVOXI, Arial; font-size:10px; line-height:18px; color:#b9b9b9; text-decoration:none;" target="_blank">voxi.co.uk/terms</a>.</td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tr>
+                                <td>&#32;</td>
+                                <td align="center" valign="top" width="100"><a href="https://www.voxi.co.uk?cid=email-ex-cid-auto/wvbom/iqeuvcq/qcnje" target="_blank"><img alt="VOXI by Vodafone" border="0" src="http://asset.davinci-crm.com/assets/1025/VOXI/Welcome/btm-voxi_logo.png" style="display:block; border:none; " width="100"></a></td>
+                                <td>&#32;</td>
+                              </tr>
+                              <tr>
+                                <td>&#32;</td>
+                                <td width="100%" height="30">&#32;</td>
+                                <td>&#32;</td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- FOOTER ENDS -->
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
